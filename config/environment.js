@@ -16,6 +16,15 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' api.artsy.net",
+      'font-src': "'self' fonts.gstatic.com",
+      'connect-src': "'self' api.artsy.net",
+      'img-src': "'self' *",
+      'style-src': "'self' fonts.googleapis.com",
+      'media-src': "'self'"
     }
   };
 
