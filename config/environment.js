@@ -14,17 +14,26 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      applicationId: 'PaFAu2kO46oTycsnl24y1PW4eplJYhqLclUewK0X',
+      restApiId: 'n1NfFjm1FopNhvNrxEqGk3JZwOwnv3nCCViOSZXC'
     },
+
     contentSecurityPolicy: {
       'default-src': "'none'",
       'script-src': "'self' api.artsy.net",
       'font-src': "'self' fonts.googleapis.com",
-      'connect-src': "'self' api.artsy.net",
+      'connect-src': "'self' *",
       'img-src': "'self' *",
       'style-src': "'self' fonts.googleapis.com",
       'media-src': "'self'",
+    },
+
+    'simple-auth': {
+      authenticationRoute: 'sessions.create',
+      routeAfterAuthentication: 'application',
+      routeIfAlreadyAuthenticated: 'application',
+      authorizer: 'authorizer:parse',
+      crossOriginWhitelist: ['https://api.parse.com']
     }
   };
 
