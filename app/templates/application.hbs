@@ -9,8 +9,10 @@
       <li class="main-nav-item"><a href="#">Contact</a></li>
     </ul>
   </nav>
-  <button type="button" name="log-in">Log In/Sign Up</button>
+  {{#link-to 'sessions.create'}}<button>Log In / Sign Up</button>{{/link-to}}
+
 </section>
 
 
 {{outlet}}
+{{outlet 'modal'}}
