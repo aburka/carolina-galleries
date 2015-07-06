@@ -1,4 +1,4 @@
-{{log model}}
+{{log model._embedded.artworks}}
 
 <section class="landing-hero">
   <img src="/background.jpg" alt="" />
@@ -8,26 +8,13 @@
 
 <section class="explore">
   <ul class="explore-list">
+    {{#each model._embedded.artworks as |artwork|}}
     <li class="explore-list-item">
-      <img src="http://placebear.com/g/200/200" class="thumbnail"/>
-      <p class="artist">Andy Warhol</p>
-      <p class="artwork">Orange Disaster</p>
+      <img src="{{artwork._links.thumbnail.href}}" class="thumbnail"/>
+      <p class="artist">{{artwork.artist}}</p>
+      <p class="artwork">{{artwork.title}}</p>
     </li>
-    <li class="explore-list-item">
-      <img src="http://placebear.com/g/200/200" class="thumbnail"/>
-      <p class="artist">Andy Warhol</p>
-      <p class="artwork">Orange Disaster</p>
-    </li>
-    <li class="explore-list-item">
-      <img src="http://placebear.com/g/200/200" class="thumbnail"/>
-      <p class="artist">Andy Warhol</p>
-      <p class="artwork">Orange Disaster</p>
-    </li>
-    <li class="explore-list-item">
-      <img src="http://placebear.com/g/200/200" class="thumbnail"/>
-      <p class="artist">Andy Warhol</p>
-      <p class="artwork">Orange Disaster</p>
-    </li>
+    {{/each}}
   </ul>
 </section>
 {{outlet}}
