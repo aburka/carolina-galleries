@@ -11,6 +11,7 @@ Router.map(function() {
   });
   this.route('artists', function() {});
   this.route('artwork', function() {});
+  this.route('contact');
 });
 
 export default Router;
