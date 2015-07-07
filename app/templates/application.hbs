@@ -9,7 +9,11 @@
       <li class="main-nav-item"><a href="#">Contact</a></li>
     </ul>
   </nav>
-  {{#link-to 'sessions.create'}}<button>Log In / Sign Up</button>{{/link-to}}
+  {{#if session.isAuthenticated}}
+    <button {{action 'invalidateSession'}}>Logout</button>
+  {{else}}
+    {{#link-to 'sessions.create'}}<button>Login</button>{{/link-to}}
+  {{/if}}
 
 </section>
 
