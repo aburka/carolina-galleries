@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('sessions', function() {
     this.route('create');
   });
+  this.route('artists');
 });
 
 export default Router;
