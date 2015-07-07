@@ -7,16 +7,22 @@
 </section>
 
 <section class="explore">
-  {{#link-to 'artists.index'}}ARTISTS{{/link-to}}
-  {{#link-to 'artwork.index'}}ARTWORK{{/link-to}}
   <ul class="explore-list">
-    {{#each model._embedded.artworks as |artwork|}}
+
     <li class="explore-list-item">
-      <img src="{{artwork._links.thumbnail.href}}" class="thumbnail"/>
-      <p class="artist">{{artwork.artist}}</p>
-      <p class="artwork">{{artwork.title}}</p>
+      {{#link-to 'artwork.index'}}
+      <img src="/images/water-lillies.jpg" class="thumbnail"/>
+      <p class="explore-link">Explore Artwork</p>
+      {{/link-to}}
     </li>
-    {{/each}}
+
+    <li class="explore-list-item">
+      {{#link-to 'artists.index'}}
+      <img src="/images/picasso.jpg" class="thumbnail"/>
+      <p class="explore-link">Explore Artists</p>
+      {{/link-to}}
+    </li>
+
   </ul>
 </section>
 {{outlet}}
