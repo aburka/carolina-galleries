@@ -9,7 +9,7 @@ Router.map(function() {
   this.route('sessions', function() {
     this.route('create');
   });
-  this.route('artists');
+  this.route('artists', function() {});
 });
 
 export default Router;
