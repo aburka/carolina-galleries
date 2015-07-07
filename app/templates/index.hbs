@@ -8,6 +8,7 @@
 
 <section class="explore">
   {{#link-to 'artists.index'}}ARTISTS{{/link-to}}
+  {{#link-to 'artwork.index'}}ARTWORK{{/link-to}}
   <ul class="explore-list">
     {{#each model._embedded.artworks as |artwork|}}
     <li class="explore-list-item">

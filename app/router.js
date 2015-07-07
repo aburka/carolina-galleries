@@ -10,6 +10,7 @@ Router.map(function() {
     this.route('create');
   });
   this.route('artists', function() {});
+  this.route('artwork', function() {});
 });
 
 export default Router;

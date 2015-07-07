@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model: function(){
     return Ember.$.ajax({
-      url: 'https://api.artsy.net/api/artists?gene_id=4d90d18edcdd5f44a5000010',
+      url: 'https://api.artsy.net/api/artworks?gene_id=4d90d18edcdd5f44a5000010',
       type: 'GET',
       dataType: 'json',
       contentType: "application/json",
@@ -12,7 +12,7 @@ export default Ember.Route.extend({
       },
 
       success: function(data){
-          console.log("success:artists", data);
+          console.log("success:artwork", data);
       }
       });
     },

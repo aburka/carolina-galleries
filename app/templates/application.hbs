@@ -1,12 +1,12 @@
 <section class="main-heading">
   <div class="main-logo">
-    <img src="#" alt="Carolina Galleries" />
+    {{#link-to 'index'}}<img src="#" alt="Carolina Galleries" />{{/link-to}}
   </div>
   <nav class="main-nav">
     <ul class="main-nav-list">
-      <li class="main-nav-item"><a href="#">Artists</a></li>
-      <li class="main-nav-item"><a href="#">Artwork</a></li>
-      <li class="main-nav-item"><a href="#">Contact</a></li>
+      {{#link-to 'artists.index'}}<li class="main-nav-item">Artists</li>{{/link-to}}
+      <li class="main-nav-item">Artwork</li>
+      <li class="main-nav-item">Contact</li>
     </ul>
   </nav>
   {{#if session.isAuthenticated}}
