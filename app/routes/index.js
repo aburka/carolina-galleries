@@ -1,11 +1,10 @@
 import Ember from 'ember';
-import ApplicationRouteMixin from 'simple-auth/mixins/application-route-mixin';
 
 
-export default Ember.Route.extend(ApplicationRouteMixin, {
+export default Ember.Route.extend( {
   model: function(){
     return Ember.$.ajax({
-      url: 'https://api.artsy.net/api/artworks',
+      url: 'https://api.artsy.net/api/artworks?gene_id=4d90d18edcdd5f44a5000010',
       type: 'GET',
       dataType: 'json',
       contentType: "application/json",
