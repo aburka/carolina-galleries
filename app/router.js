@@ -12,6 +12,10 @@ Router.map(function() {
   this.route('artists', function() {});
   this.route('artwork', function() {});
   this.route('contact');
+
+  this.route('users', function() {
+    this.route('current');
+  });
 });
 
 export default Router;
