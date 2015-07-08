@@ -6,12 +6,14 @@
     <ul class="main-nav-list">
       {{#link-to 'artists.index'}}<li class="main-nav-item">Artists</li>{{/link-to}}
       {{#link-to 'artwork.index'}}<li class="main-nav-item">Artwork</li>{{/link-to}}
-      <li class="main-nav-item">Contact</li>
+      {{#link-to 'contact'}}<li class="main-nav-item">Contact</li>{{/link-to}}
     </ul>
   </nav>
   {{#if session.isAuthenticated}}
+    <h2>{{model.firstName}} {{model.lastName}}</h2>
     <button {{action 'invalidateSession'}}>Logout</button>
   {{else}}
+    <button>Sign Up</button>
     {{#link-to 'sessions.create'}}<button>Login</button>{{/link-to}}
   {{/if}}
 
