@@ -1,6 +1,9 @@
 <section class="artwork">
   <ul class="artwork-list">
     {{#each model._embedded.artworks as |artist|}}
+    {{#if session.isAuthenticated}}
+      <button {{action "like"}}>like</button>
+    {{/if}}
     <a href="{{artist._links.artworks.href}}">
     <li class="artwork-list-item">
       <p class="artwork-title">{{artist.title}}</p>
