@@ -1,0 +1,7 @@
+<form class="log-in">
+  {{input placeholder="First Name" value=model.firstName}}
+  {{input placeholder="First Name" value=model.lastName}}
+  {{input placeholder="E-mail" type="email" value=model.username}}
+  {{input placeholder="Password" type="password" value=model.password}}
+  <button type="button" name="log-in-button" {{action 'createUser'}}>Sign Up</button>
+</form>

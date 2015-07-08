@@ -10,10 +10,10 @@
     </ul>
   </nav>
   {{#if session.isAuthenticated}}
-    <h2>{{model.firstName}} {{model.lastName}}</h2>
+    {{#link-to 'users.current'}}<h2>{{model.firstName}} {{model.lastName}}</h2>{{/link-to}}
     <button {{action 'invalidateSession'}}>Logout</button>
   {{else}}
-    <button>Sign Up</button>
+    {{#link-to 'users.create'}}<button>Sign Up</button>{{/link-to}}
     {{#link-to 'sessions.create'}}<button>Login</button>{{/link-to}}
   {{/if}}
 

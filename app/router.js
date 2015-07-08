@@ -15,6 +15,7 @@ Router.map(function() {
 
   this.route('users', function() {
     this.route('current');
+    this.route('create');
   });
 });
 
