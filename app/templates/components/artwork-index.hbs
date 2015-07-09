@@ -1,13 +1,15 @@
 <section class="artwork">
   <ul class="artwork-list">
-    {{#each model._embedded.artworks as |artist|}}
+    {{#each model._embedded.artworks as |artwork|}}
     {{#if session.isAuthenticated}}
-      <button {{action "like"}}>like</button>
+      <button {{action "like" artwork}}>like</button>
+    {{else}}
+      <button {{action "promptLike"}}>like</button>
     {{/if}}
-    <a href="{{artist._links.artworks.href}}">
+    <a href="{{artwork._links.artworks.self.href}}">
     <li class="artwork-list-item">
-      <p class="artwork-title">{{artist.title}}</p>
-      <img src="{{artist._links.thumbnail.href}}" alt="" />
+      <p class="artwork-title">{{artwork.title}}</p>
+      <img src="{{artwork._links.thumbnail.href}}" alt="" />
     </li>
     </a>
     {{/each}}
