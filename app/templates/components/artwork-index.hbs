@@ -6,12 +6,12 @@
     {{else}}
       <button {{action "promptLike"}}>like</button>
     {{/if}}
-    <a href="{{artwork._links.artworks.self.href}}">
+    {{#link-to 'artwork.show' artwork}}
     <li class="artwork-list-item">
       <p class="artwork-title">{{artwork.title}}</p>
       <img src="{{artwork._links.thumbnail.href}}" alt="" />
     </li>
-    </a>
+    {{/link-to}}
     {{/each}}
   </ul>
 </section>
