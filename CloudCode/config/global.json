@@ -1,0 +1,17 @@
+{
+  "global": {
+    "parseVersion": "1.4.2"
+  },
+  "applications": {
+    "Carolina Galleries": {
+      "applicationId": "PaFAu2kO46oTycsnl24y1PW4eplJYhqLclUewK0X",
+      "masterKey": "kcxcbSupbFDV7n4UBQjU46Xrzb2k1AC4EzaY4Jkd"
+    },
+    "CloudCode": {
+      "link": "Carolina Galleries"
+    },
+    "_default": {
+      "link": "Carolina Galleries"
+    }
+  }
+}
