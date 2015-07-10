@@ -1,12 +1,12 @@
 <section class="artist">
   <ul class="artist-list">
     {{#each model._embedded.artists as |artist|}}
-      <a href="{{artist._links.artworks.href}}">
+      {{#link-to 'artists.show' artist}}
       <li class="artist-list-item">
         <p class="artist">{{artist.name}}</p>
         <img src="{{artist._links.thumbnail.href}}" alt="" />
       </li>
-      </a>
+      {{/link-to}}
     {{/each}}
   </ul>
 </section>
