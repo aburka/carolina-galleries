@@ -9,9 +9,7 @@ Router.map(function() {
   this.route('sessions', function() {
     this.route('create');
   });
-  this.route('artists', function() {
-    this.route('show', {path: ':id'});
-  });
+  this.route('artists', function() {});
   this.route('artwork', function() {
     this.route('show', {path: 'art/:id'});
   });

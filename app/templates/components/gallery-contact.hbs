@@ -9,7 +9,7 @@
     </form>
   {{else}}
   <form class="contact-form">
-    {{input type="text" placeholder="Name" value=name}}
+    {{input type="text" placeholder="Name" value=model.name}}
     {{input type="text" placeholder="Email" value=model.email}}
     {{#textarea placeholder="Questions or Comments" value=model.comments}}{{/textarea}}
     <button type="button" name="button" {{action 'submitContact'}}>Submit</button>

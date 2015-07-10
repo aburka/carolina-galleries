@@ -7,7 +7,7 @@ export default Ember.Route.extend({
 
   actions: {
     submitContact: function(){
-      console.log(this.get('model'));
+      console.log(this.get('name'));
     }
   }
 });
