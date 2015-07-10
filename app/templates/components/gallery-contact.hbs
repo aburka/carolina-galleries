@@ -1,0 +1,22 @@
+
+  {{#if session.isAuthenticated}}
+    <form class="contact-form">
+      {{input type="text" placeholder="{{model.firstName}}" value=model.firstName}}
+      {{input type="text" placeholder="{{model.lastName}}" value=model.lastName}}
+      {{input type="text" placeholder="{{model.email}}" value=model.email}}
+      {{#textarea placeholder="Questions or Comments" value=model.comments}}{{/textarea}}
+      <button type="button" name="button" {{action 'submitContact'}}>Submit</button>
+    </form>
+  {{else}}
+  <form class="contact-form">
+    {{input type="text" placeholder="Name" value=name}}
+    {{input type="text" placeholder="Email" value=model.email}}
+    {{#textarea placeholder="Questions or Comments" value=model.comments}}{{/textarea}}
+    <button type="button" name="button" {{action 'submitContact'}}>Submit</button>
+  </form>
+ {{/if}}
+
+
+ <div class="map">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6708.20190269377!2d-79.93337763645623!3d32.78958242916753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x94c99e40dce8a91a!2sThe+Charleston+Museum!5e0!3m2!1sen!2sus!4v1436298785435" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+ </div>
