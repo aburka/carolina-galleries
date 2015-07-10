@@ -3,17 +3,17 @@
 </div>
   {{#if session.isAuthenticated}}
     <form class="contact-form">
-      <input type="text" placeholder="{{parse-user.firstName}}">
-      <input type="text" placeholder="{{parse-user.email}}">
-      <input type="text-area" placeholder="Questions or Comments">
-      <button type="button" name="button"></button>
+      <input type="text" placeholder="{{model.firstName}} {{model.lastName}}">
+      <input type="text" placeholder="{{model.email}}">
+      <textarea placeholder="Questions or Comments" />
+      <button type="button" name="button">Submit</button>
     </form>
   {{else}}
   <form class="contact-form">
     <input type="text" placeholder="Name">
     <input type="text" placeholder="Email">
-    <input type="text-area" placeholder="Questions or Comments">
-    <button type="button" name="button"></button>
+    <textarea placeholder="Questions or Comments" />
+    <button type="button" name="button">Submit</button>
   </form>
  {{/if}}
 
