@@ -11,15 +11,14 @@ Router.map(function() {
   });
   this.route('artists', function() {
     this.route('show', {path: ':id'});
-    this.route('similar');
   });
   this.route('artwork', function() {
-    this.route('show', {path: ':id'});
+    this.route('show', {path: 'art/:id'});
   });
   this.route('contact');
 
   this.route('users', function() {
-    this.route('current');
+    this.route('current', {path: 'me'});
     this.route('create');
   });
 });
