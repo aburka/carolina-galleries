@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('artists', function() {});
   this.route('artwork', function() {
     this.route('show', {path: 'art/:id'});
+    this.route('sculpture');
   });
   this.route('contact');
 
