@@ -12,3 +12,13 @@ Parse.Cloud.define("like", function(request, response) {
     message: "Hello " + user.get('firstName'),
   });
 });
+
+Parse.Cloud.define("unlike", function(request, response) {
+  var user = request.user;
+  user.remove("Artwork", request.params.artwork).save();
+
+  response.success({
+    artwork: request.params.artwork,
+    message: "Hello " + user.get('firstName'),
+  });
+});

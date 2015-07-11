@@ -2,6 +2,7 @@
 <ul class="user-gallery-list">
 {{#each session.currentUser._data.Artwork as |artwork|}}
   <li class="user-gallery-item">
+    <button type="button" name="button" {{action 'unlike' artwork}}>Unlike</button>
     <img class="user-gallery-thumbnail" src="{{artwork._links.thumbnail.href}}"/>
     <p class="user-gallery-title">{{artwork.title}}</p>
   </li>
