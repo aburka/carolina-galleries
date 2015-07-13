@@ -20,7 +20,6 @@ export default Ember.Route.extend({
     actions: {
       like: function(artwork) {
         var adapter = this.store.adapterFor('application');
-        //var artwork = this.attrs.model.value._embedded.artworks;
         adapter.ajax("https://api.parse.com/1/functions/like", 'POST', {
           data: {
             artwork: artwork
@@ -28,21 +27,16 @@ export default Ember.Route.extend({
         }).then(function(response){
           console.log(response);
         });
-        /*return Ember.$.ajax("https://api.parse.com/1/users/" + this.get('session.currentUser.id'), {
-          type: "PUT",
-          data: JSON.stringify({
-            likes: {
-              __op: "AddUnique",
-              objects: [
-                {
-                  __type: 'Pointer',
-                  className: 'Artwork',
-                  objectId: artwork.id
-                }
-              ]
-            }
-          })
-        });*/
+      },
+      unlike: function(artwork) {
+        var adapter = this.store.adapterFor('application');
+        adapter.ajax("https://api.parse.com/1/functions/unlike", 'POST', {
+          data: {
+            artwork: artwork
+          }
+        }).then(function(response){
+          console.log(response);
+        });
       }
     }
 });
