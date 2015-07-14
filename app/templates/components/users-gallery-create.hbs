@@ -1,0 +1,6 @@
+{{log 'gallery-create' model}}
+<form class="user-gallery-upload">
+  {{input type="text" value=model.url placeholder="url"}}
+  {{input type="text" value=model.title placeholder="title"}}
+  <button {{action 'uploadImage'}}>Upload</button>
+</form>
