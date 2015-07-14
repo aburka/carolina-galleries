@@ -1,6 +1,10 @@
-<h1>Your Gallery</h1>
-{{#link-to 'users.gallery.create' model=model}}
-<button>Upload new artwork</button>
+{{#link-to 'users.current'}}
+  <h1>Liked Images</h1>
 {{/link-to}}
+<h1>User Gallery</h1>
+{{#link-to 'users.gallery.create' model=model}}
+  <button>Upload new artwork</button>
+{{/link-to}}
+
 {{users-gallery model=model}}
 {{outlet}}
