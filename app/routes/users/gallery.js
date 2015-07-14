@@ -2,13 +2,13 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function(){
-    return this.store.createRecord('image');
+    return this.store.findAll('image');
   },
 
   actions:{
-    uploadImage: function(image){
+    uploadImage: function(params){
+      var image = this.store.createRecord('image', params);
       image.save();
-      this.transitionTo('users.gallery.index');
     }
   }
 });

@@ -20,10 +20,7 @@ Router.map(function() {
   this.route('users', function() {
     this.route('current', {path: 'me'});
     this.route('create');
-    this.route('gallery', function(){
-      this.route('index');
-      this.route('create');
-    });
+    this.route('gallery');
   });
 });
 
