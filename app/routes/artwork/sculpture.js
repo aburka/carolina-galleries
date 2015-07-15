@@ -27,6 +27,16 @@ export default Ember.Route.extend({
         }).then(function(response){
           console.log(response);
         });
+      },
+      unlike: function(artwork) {
+        var adapter = this.store.adapterFor('application');
+        adapter.ajax("https://api.parse.com/1/functions/unlike", 'POST', {
+          data: {
+            artwork: artwork
+          }
+        }).then(function(response){
+          console.log(response);
+        });
       }
     }
 });

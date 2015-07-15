@@ -1,17 +1,7 @@
 <section class="sculpture">
   <ul class="sculpture-list">
     {{#each model._embedded.artworks as |artwork|}}
-    {{#if session.isAuthenticated}}
-      <button {{action "like" artwork}}>like</button>
-    {{else}}
-      <button {{action "promptLike"}}>like</button>
-    {{/if}}
-    {{#link-to 'artwork.show' artwork}}
-    <li class="sculpture-list-item">
-      <p class="sculpture-title">{{artwork.title}}</p>
-      <img src="{{artwork._links.thumbnail.href}}" alt="" />
-    </li>
-    {{/link-to}}
+      {{artwork-painting-item artwork=artwork like='like' unlike='unlike'}}
     {{/each}}
   </ul>
 </section>

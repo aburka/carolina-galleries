@@ -1,0 +1,15 @@
+{{#if session.isAuthenticated}}
+  {{#if isLiked}}
+    <button {{action 'unlike' artwork}}>unlike</button>
+  {{else}}
+    <button {{action 'like' artwork}}>like</button>
+  {{/if}}
+{{else}}
+  <button {{action "promptLike"}}>like</button>
+{{/if}}
+{{#link-to 'artwork.show' artwork}}
+<li class="paintings-list-item">
+  <p class="paintings-title">{{artwork.title}}</p>
+  <img src="{{artwork._links.thumbnail.href}}" alt="" />
+</li>
+{{/link-to}}
