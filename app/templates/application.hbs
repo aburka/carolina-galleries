@@ -4,8 +4,11 @@
   </div>
   <nav class="main-nav">
     <ul class="main-nav-list">
-      {{#link-to 'artists.index'}}<li class="main-nav-item">Artists</li>{{/link-to}}
+      {{!-- {{#link-to 'artists.index'}}<li class="main-nav-item">Artists</li>{{/link-to}} --}}
       {{#link-to 'artwork.index'}}<li class="main-nav-item">Artwork</li>{{/link-to}}
+      {{#if session.isAuthenticated}}
+      {{#link-to 'users.gallery'}}<li class="main-nav-item">Community Gallery</li>{{/link-to}}
+      {{/if}}
       {{#link-to 'contact'}}<li class="main-nav-item">Contact</li>{{/link-to}}
     </ul>
   </nav>
