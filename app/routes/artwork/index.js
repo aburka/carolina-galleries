@@ -24,8 +24,6 @@ export default Ember.Route.extend({
           data: {
             artwork: artwork
           }
-        }).then(function(response){
-          console.log(response);
         });
       },
       unlike: function(artwork) {
@@ -34,8 +32,6 @@ export default Ember.Route.extend({
           data: {
             artwork: artwork
           }
-        }).then(function(response){
-          console.log(response);
         });
       }
     }

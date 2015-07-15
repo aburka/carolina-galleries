@@ -2,6 +2,9 @@ import Ember from 'ember';
 import AuthenticatedRouteMixin from 'simple-auth/mixins/authenticated-route-mixin';
 
 export default Ember.Route.extend(AuthenticatedRouteMixin, {
+  model: function(){
+    return this.get('session.currentUser.Artwork');
+  },
   actions: {
     unlike: function(artwork) {
       var adapter = this.store.adapterFor('application');

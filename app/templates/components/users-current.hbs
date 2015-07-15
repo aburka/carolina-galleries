@@ -3,7 +3,8 @@
 <h1>User Gallery</h1>
 {{/link-to}}
 <ul class="user-gallery-list">
-{{#each session.currentUser._data.Artwork as |artwork|}}
+  {{log model}}
+{{#each model as |artwork|}}
   <li class="user-gallery-item">
     <button type="button" name="button" {{action 'unlike' artwork}}>Unlike</button>
     {{#link-to 'artwork.show' artwork}}
