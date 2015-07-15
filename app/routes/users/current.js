@@ -24,7 +24,9 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
         data: {
           artwork: artwork
         }
-      }).then(window.location.reload());
+      }).then(function(){
+        this.get('session.currentUser.Artwork').removeObject(artwork);
+      }.bind(this));
     }
   }
 });
