@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  isHidden: true,
+
   username: function(){
     return this.get('session.currentUser.username');
   }.property('username'),
@@ -18,6 +20,12 @@ export default Ember.Component.extend({
       this.set('title');
       this.set('username');
       this.set('name');
+    },
+    show: function(){
+      this.set('isHidden', false);
+    },
+    cancel: function(){
+      this.set('isHidden', true);
     }
   }
 });
