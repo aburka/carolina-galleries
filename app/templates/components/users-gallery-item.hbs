@@ -1,8 +1,15 @@
 {{#if isAdmin}}
   <button{{action 'delete'}}>Delete</button>
+  {{#if isHidden}}
+    <button {{action 'showEdit'}}>Edit</button>
+  {{else}}
+    {{input type="text" value=artwork.url placeholder="url"}}
+    {{input type="text" value=artwork.title placeholder="title"}}
+    <button {{action 'edit' artwork}}>Edit</button>
+    <button {{action 'cancel'}}>Cancel</button>
+  {{/if}}
 {{/if}}
 <li class='user-gallery-item'>
-  {{log artwork}}
   <p class='user-gallery-title'>{{artwork.title}}</p>
   <p class='user-gallery-owner'>Uploaded by: {{artwork.name}}</p>
   <img src="{{artwork.url}}" alt="" />

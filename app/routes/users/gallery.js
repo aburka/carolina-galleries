@@ -13,6 +13,9 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     },
     delete: function(artwork){
       artwork.destroyRecord();
+    },
+    edit: function(artwork){
+      artwork.save();
     }
   }
 });
