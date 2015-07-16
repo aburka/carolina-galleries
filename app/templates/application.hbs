@@ -17,9 +17,9 @@
       {{/if}} --}}
       {{#link-to 'artwork.index'}}<li class="main-nav-item">Artwork</li>{{/link-to}}
       {{#if session.isAuthenticated}}
-      {{#link-to 'users.gallery'}}<li class="main-nav-item">Community Gallery</li>{{/link-to}}
+        {{#link-to 'users.gallery'}}<li class="main-nav-item">Community Gallery</li>{{/link-to}}
       {{/if}}
-      {{#link-to 'contact'}}<li class="main-nav-item">Contact</li>{{/link-to}}
+        {{#link-to 'contact'}}<li class="main-nav-item">Contact</li>{{/link-to}}
     </ul>
   </nav>
   {{#if session.isAuthenticated}}
