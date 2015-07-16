@@ -1,10 +1,6 @@
 {{log model}}
 <ul class='user-gallery-list'>
-  {{#each model as |model|}}
-  <li class='user-gallery-item'>
-    <p class='user-gallery-title'>{{model.title}}</p>
-    <p class='user-gallery-owner'>Uploaded by: {{model.name}}</p>
-    <img src="{{model.url}}" alt="" />
-  </li>
+  {{#each model as |artwork|}}
+    {{users-gallery-item delete="delete" artwork=artwork}}
   {{/each}}
 </ul>

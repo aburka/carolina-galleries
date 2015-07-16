@@ -11,5 +11,8 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
       var image = this.store.createRecord('image', params);
       image.save();
     },
+    delete: function(artwork){
+      artwork.destroyRecord();
+    }
   }
 });

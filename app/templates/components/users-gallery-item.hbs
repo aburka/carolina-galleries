@@ -1,0 +1,9 @@
+{{#if isAdmin}}
+  <button{{action 'delete'}}>Delete</button>
+{{/if}}
+<li class='user-gallery-item'>
+  {{log artwork}}
+  <p class='user-gallery-title'>{{artwork.title}}</p>
+  <p class='user-gallery-owner'>Uploaded by: {{artwork.name}}</p>
+  <img src="{{artwork.url}}" alt="" />
+</li>
