@@ -15,6 +15,6 @@ export default Ember.Route.extend(ApplicationRouteMixin, {
           sessionToken: user.get('sessionToken')
         });
       }.bind(this));
-    }
+    },
   }
 });

@@ -5,6 +5,16 @@
   <nav class="main-nav">
     <ul class="main-nav-list">
       {{!-- {{#link-to 'artists.index'}}<li class="main-nav-item">Artists</li>{{/link-to}} --}}
+      {{!-- {{#if isHidden}}
+        <li class="main-nav-item" {{action 'openUl'}}>Artwork</li>
+      {{else}}
+        <li class="main-nav-item" {{action 'closeUl'}}>Artwork</li>
+          <ul class="main-nav-item-dropdown">
+            {{#link-to 'artwork.index'}}<li class="main-nav-item-dropdown-item">All Artwork</li>{{/link-to}}
+            {{#link-to 'artwork.painting'}}<li class="main-nav-item-dropdown-item">Paintings</li>{{/link-to}}
+            {{#link-to 'artwork.sculpture'}}<li class="main-nav-item-dropdown-item">Sculpture</li>{{/link-to}}
+          </ul>
+      {{/if}} --}}
       {{#link-to 'artwork.index'}}<li class="main-nav-item">Artwork</li>{{/link-to}}
       {{#if session.isAuthenticated}}
       {{#link-to 'users.gallery'}}<li class="main-nav-item">Community Gallery</li>{{/link-to}}

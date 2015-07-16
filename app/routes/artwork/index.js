@@ -24,7 +24,9 @@ export default Ember.Route.extend({
           data: {
             artwork: artwork
           }
-        });
+        }).then(function(){
+          this.get('session.currentUser.Artwork').addObject(artwork);
+        }.bind(this));
       },
       unlike: function(artwork) {
         var adapter = this.store.adapterFor('application');
@@ -32,7 +34,9 @@ export default Ember.Route.extend({
           data: {
             artwork: artwork
           }
-        });
+        }).then(function(){
+          this.get('session.currentUser.Artwork').addObject(artwork);
+        }.bind(this));
       }
     }
 });
