@@ -2,7 +2,13 @@
 
 $font: Roboto, sans-serif;
 
-h1, h2, h3, h4, p, a, li{
+h1, h2, h3, h4, p, a, li, button{
+  display: inline-block;
   font-family: $font;
   font-weight: 300;
+  font-size: 15px;
+}
+
+a{
+  text-decoration: none;
 }

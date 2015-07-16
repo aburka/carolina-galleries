@@ -22,14 +22,15 @@
         {{#link-to 'contact'}}<li class="main-nav-item">Contact</li>{{/link-to}}
     </ul>
   </nav>
+  <div class="user-login-create">
   {{#if session.isAuthenticated}}
-    {{#link-to 'users.current'}}<h2>{{session.currentUser.firstName}} {{session.currentUser.lastName}}</h2>{{/link-to}}
-    <button {{action 'invalidateSession'}}>Logout</button>
+    {{#link-to 'users.current'}}<p class="current-user">{{session.currentUser.firstName}} {{session.currentUser.lastName}}</p>{{/link-to}}
+    <p class="logout" {{action 'invalidateSession'}}>Logout</p>
   {{else}}
     {{users-create model=model createUser='createUser'}}
     {{sessions-create}}
   {{/if}}
-
+</div>
 </section>
 
 
