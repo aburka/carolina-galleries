@@ -1,0 +1,60 @@
+//page container
+.artwork{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+//div conatining list items
+.artwork-list{
+  margin: 25px 0 0 0;
+}
+
+//"li"
+.artwork-list-item{
+  display: inline-block;
+  width: 300px;
+  margin: 14px 14px 0 7px;
+  background-color: $light-gray;
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 5px;
+  text-align: center;
+  // padding: 10px;
+}
+
+.artwork-list-item::first-line{
+  vertical-align: top;
+}
+
+//image
+.artwork-list-item>img{
+  max-width: 100%;
+  text-align: center;
+  top-left-border-radius: 5px;
+  top-right-border-radius: 5px;
+
+}
+
+//title of artwork
+.artwork-title{
+  display: block;
+  padding: 20px;
+}
+
+.artwork-title>p{
+  font-size: 16px;
+  line-height: 20px;
+}
+
+//font awesome paintbrush
+.liked{
+  color: $red;
+}
+
+.not-liked{
+  color: $light-gray;
+}
+
+.not-liked:hover{
+  color: $red;
+  transition: 0.4s;
+}
