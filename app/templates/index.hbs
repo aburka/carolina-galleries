@@ -2,31 +2,40 @@
 
 <section class="landing-hero">
   <img src="/images/turner.jpg" alt="" />
-  <h2>Carolina Galleries is Charleston's premier destination for fine art.</h2>
-  <button type="button" name="button">Expore</button>
+  <h1 class="landing-headline">Carolina Galleries is Charleston's premier destination for fine art.</h1>
+  <div class="landing-explore"><p>Explore</p></div>
 </section>
 
-<section class="explore">
+<section class="explore" id="explore">
   <ul class="explore-list">
 
     <li class="explore-list-item">
       {{#link-to 'artwork.index'}}
       <img src="/images/water-lillies.jpg" class="explore-thumbnail"/>
-      <p class="explore-link">Explore All Artwork</p>
+      <span class="explore-caption">
+        <p class="explore-title">Explore All Artwork</p>
+        <p class="explore-copy">Discover all of the incredible works of art available to view at Carolina Galleries.</p>
+      </span>
       {{/link-to}}
     </li>
 
     <li class="explore-list-item">
       {{#link-to 'artwork.painting'}}
       <img src="/images/painting.jpg" class="explore-thumbnail"/>
-      <p class="explore-link">Explore Paintings</p>
+      <span class="explore-caption">
+        <p class="explore-title">Explore Paintings</p>
+        <p class="explore-copy">Explore Carolina Galleries' permanent exhibit of paintings.</p>
+      </span>
       {{/link-to}}
     </li>
 
     <li class="explore-list-item">
       {{#link-to 'artwork.sculpture'}}
       <img src="/images/colbert.jpg" class="explore-thumbnail"/>
-      <p class="explore-link">Explore Sculpture</p>
+      <span class="explore-caption">
+        <p class="explore-title">Explore Sculpture</p>
+        <p class="explore-copy">This summer, Carolina Galleries is excited to highlight sculpture in a special exhibition.</p>
+      </span>
       {{/link-to}}
     </li>
 
