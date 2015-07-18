@@ -1,15 +1,15 @@
-<h1>Your Liked Images</h1>
+<h1 class="current-user-links">Your Liked Images</h1>
 {{#link-to 'users.gallery'}}
-<h1>Community Gallery</h1>
+<h1 class="current-user-links">Community Gallery</h1>
 {{/link-to}}
-<ul class="user-gallery-list">
+<ul class="artwork-list">
   {{log model}}
 {{#each model as |artwork|}}
-  <li class="user-gallery-item">
-    <button type="button" name="button" {{action 'unlike' artwork}}>Unlike</button>
+  <li class="artwork-list-item">
+    <button class="like-button" {{action 'unlike' artwork}}><i class="fa fa-paint-brush liked"></i></button>
     {{#link-to 'artwork.show' artwork}}
     <img class="user-gallery-thumbnail" src="{{artwork._links.thumbnail.href}}"/>
-    <p class="user-gallery-title">{{artwork.title}}</p>
+    <p class="artwork-title">{{artwork.title}}</p>
     {{/link-to}}
   </li>
 {{/each}}

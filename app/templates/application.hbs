@@ -29,8 +29,8 @@
     <p class="logout" {{action 'invalidateSession'}}>Logout</p>
     </span>
   {{else}}
-    <p class="signup" {{action 'openModal' 'modal-main'}}>Sign Up</p>
-    <p class="login" {{action 'openModal' 'modal-main'}}>Log In</p>
+    <p class="open-signup" {{action 'openModal' 'modal-main'}}>Sign Up</p>
+    <p class="open-login" {{action 'openModal' 'modal-main'}}>Log In</p>
     {{#simple-modal id='modal-main' enabled=false createUser="createUser" model=model}}
 
     {{/simple-modal}}

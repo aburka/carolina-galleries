@@ -45,7 +45,7 @@
 }
 
 .user-login-create{
-  color: $red;
+  color: white;
   float: right;
   margin-right: 25px;
 }
@@ -61,11 +61,33 @@
   padding-right: 30px;
 }
 
+.open-login,
+.open-signup{
+  display: inline-block;
+  float: right;
+  padding-top: 30px;
+  padding-right: 30px;
+  color: white;
+}
+
 .current-user:hover,
 .logout:hover,
-.login:hover,
-.signup:hover,
+.open-login:hover,
+.open-signup:hover,
 .cancel:hover{
   color: $light-gray;
   transition: 0.3s;
+  cursor: pointer;
+}
+
+.login,
+.signup{
+  color: $dark-gray;
+}
+
+.login:hover,
+.signup:hover{
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: pointer;
 }

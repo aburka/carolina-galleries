@@ -32,8 +32,14 @@ input {
   border-bottom: 1px solid $dark-gray;
   height: 40px;
   width: 200px;
+  margin: 15px 0 10px 0;
   color: $dark-gray;
-  margin: 10px 0;
+  font-size: 13px;
+  overflow: auto;
+}
+
+input:focus{
+  outline: none;
 }
 
 .fa-times{
