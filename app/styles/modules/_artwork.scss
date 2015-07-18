@@ -6,6 +6,7 @@
 
 //div conatining list items
 .artwork-list{
+  // max-width: 1000px;
   margin: 25px 0 0 0;
 }
 
@@ -13,14 +14,19 @@
 .artwork-list-item{
   display: inline-block;
   width: 300px;
+  // height: 300px;
   margin: 14px 14px 0 7px;
   background-color: $light-gray;
   border: 1px solid rgba(255,255,255,0.7);
   border-radius: 5px;
   text-align: center;
+
+}
+.artwork-list-item{
+
   // padding: 10px;
 }
-
+//
 .artwork-list-item::first-line{
   vertical-align: top;
 }
@@ -38,6 +44,7 @@
 .artwork-title{
   display: block;
   padding: 20px;
+
 }
 
 .artwork-title>p{

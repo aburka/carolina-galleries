@@ -1,9 +1,6 @@
-{{#if isHidden}}
-  <p class="login" {{action 'show'}}>Login</p>
-{{else}}
-  <form class="log-in">
-    {{input label="E-mail" type="email" value=identification}}
-    {{input label="Password" type="password" value=password}}
-    <button type="button" name="log-in-button" {{action 'authenticate'}}>Log In</button>
-  </form>
-{{/if}}
+<form class="login-form session">
+  <h1>Returning User Log In</h1>
+  {{input placeholder="E-mail" type="email" value=identification}}
+  {{input placeholder="Password" type="password" value=password}}
+  <p class="login" {{action 'authenticate'}}>Log In</p>
+</form>

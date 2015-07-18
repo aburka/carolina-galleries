@@ -14,7 +14,10 @@
     "qunit": "~1.17.1",
     "bourbon": "~4.2.3",
     "neat": "~1.7.2",
-    "ember-simple-auth": "0.8.0"
+    "ember-simple-auth": "0.8.0",
+    "masonry": "~3.3.1",
+    "jquery-masonry": "~3.3.1",
+    "imagesloaded": "~3.1.8"
   },
   "resolutions": {
     "ember": "~1.13.3"

@@ -1,12 +1,8 @@
-{{#if isHidden}}
-    <p class="signup" {{action 'show'}}>Sign Up</p>
-  {{else}}
-  <form class="log-in">
-    {{input placeholder="First Name" value=model.firstName}}
-    {{input placeholder="First Name" value=model.lastName}}
-    {{input placeholder="E-mail" type="email" value=model.username}}
-    {{input placeholder="Password" type="password" value=model.password}}
-    <button type="button" name="log-in-button" {{action 'createUser'}}>Sign Up</button>
-    <p class="cancel" {{action 'cancel'}}>Cancel</p>
-  </form>
-{{/if}}
+<form class="login-form new-user">
+  <h1>New User Sign Up</h1>
+  {{input placeholder="First Name" value=model.firstName}}
+  {{input placeholder="Last Name" value=model.lastName}}
+  {{input placeholder="E-mail" type="email" value=model.username}}
+  {{input placeholder="Password" type="password" value=model.password}}
+  <p class="signup" {{action 'createUser'}}>Sign Up</p>
+</form>
