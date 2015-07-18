@@ -2,24 +2,17 @@
   <div class="main-logo">
     {{#link-to 'index'}}<img src="/images/cg-white.png" alt="Carolina Galleries" />{{/link-to}}
   </div>
-  <nav class="main-nav">
-    <ul class="main-nav-list">
-      {{!-- {{#link-to 'artists.index'}}<li class="main-nav-item">Artists</li>{{/link-to}} --}}
-      {{!-- {{#if isHidden}}
-        <li class="main-nav-item" {{action 'openUl'}}>Artwork</li>
-      {{else}}
-        <li class="main-nav-item" {{action 'closeUl'}}>Artwork</li>
-          <ul class="main-nav-item-dropdown">
-            {{#link-to 'artwork.index'}}<li class="main-nav-item-dropdown-item">All Artwork</li>{{/link-to}}
-            {{#link-to 'artwork.painting'}}<li class="main-nav-item-dropdown-item">Paintings</li>{{/link-to}}
-            {{#link-to 'artwork.sculpture'}}<li class="main-nav-item-dropdown-item">Sculpture</li>{{/link-to}}
-          </ul>
-      {{/if}} --}}
-      {{#link-to 'artwork.index'}}<li class="main-nav-item">Artwork</li>{{/link-to}}
+  <nav class="site-navigation">
+    <ul class="menu">
+      <li class="menu-item">{{#link-to 'artwork.index'}}Artwork{{/link-to}}</li>
+      <ul class="dropDownList">
+        <li class="sub-menu">{{#link-to 'artwork.painting'}}Paintings{{/link-to}}</li>
+        <li class="sub-menu">{{#link-to 'artwork.sculpture'}}Sculpture{{/link-to}}</li>
+      </ul>
       {{#if session.isAuthenticated}}
-        {{#link-to 'users.gallery'}}<li class="main-nav-item">Community Gallery</li>{{/link-to}}
+        <li class="menu-item">{{#link-to 'users.gallery'}}Community Gallery{{/link-to}}</li>
       {{/if}}
-        {{#link-to 'contact'}}<li class="main-nav-item">Contact</li>{{/link-to}}
+        <li class="menu-item">{{#link-to 'contact'}}Contact{{/link-to}}</li>
     </ul>
   </nav>
   <div class="user-login-create-container">
