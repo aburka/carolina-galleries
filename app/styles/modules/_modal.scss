@@ -1,6 +1,6 @@
 
 .modal-fog {
-  background: rgba(30, 30, 30, 0.5);
+  background: rgba(30, 30, 30, 0.6);
   position: fixed;
   top: 0;
   left: 0;
@@ -12,7 +12,8 @@
   position: absolute;
   top: 20%;
   left: 25%;
-  border: 1px solid #333;
+  border: 1px solid rgba(61,61,61,0.2);
+  border-radius: 5px;
   background: white;
   height: 400px;
   width: 600px;

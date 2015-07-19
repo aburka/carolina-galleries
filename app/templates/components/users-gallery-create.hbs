@@ -1,12 +1,12 @@
 {{#if isHidden}}
-  <button {{action 'show'}}>Add Image</button>
+  <div class="add-gallery" {{action 'show'}}><i class="fa fa-plus"></i></div>
 {{else}}
   <form class="user-gallery-upload">
     {{input type="text" value=url placeholder="url"}}
     {{input type="text" value=title placeholder="title"}}
     {{input type="text" value=username placeholder="username"}}
     {{input type="text" value=name placeholder="Name"}}
-    <button {{action 'uploadImage'}}>Upload</button>
-    <button {{action 'cancel'}}>Cancel</button>
+    <button class="upload-button" {{action 'uploadImage'}}>Upload</button>
+    <button class="upload-button" {{action 'cancel'}}>Cancel</button>
   </form>
 {{/if}}

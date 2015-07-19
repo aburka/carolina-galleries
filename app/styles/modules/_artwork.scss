@@ -52,7 +52,7 @@
   line-height: 20px;
 }
 
-//font awesome paintbrush
+//font awesome heart
 .liked{
   color: $red;
 }
@@ -95,4 +95,51 @@
   display: block;
   font-size: 18px;
   line-height: 24px;
+}
+
+
+// current user gallery
+
+.gallery{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+form.user-gallery-upload{
+  margin-top: -13px;
+  height: 70px;
+}
+
+h1.current-user-links{
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 30px;
+  color: $dark-gray;
+}
+
+.gallery-edit{
+  display: block;
+  width: 300px;
+}
+
+.gallery-edit-button{
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px;
+}
+
+p.gallery{
+  padding: 10px;
+}
+
+p.gallery-title{
+  padding: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.add-gallery{
+  display: block;
+  padding: 29px 0 11px 0;
 }

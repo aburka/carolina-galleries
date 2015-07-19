@@ -1,12 +1,10 @@
 {{#if session.isAuthenticated}}
   {{#if isLiked}}
-    <button class="like-button" {{action 'unlike' artwork}}><i class="fa fa-paint-brush liked"></i></button>
+    <button class="like-button" {{action 'unlike' artwork}}><i class="fa fa-heart liked"></i></button>
   {{else}}
-    <button class="unlike-button" {{action 'like' artwork}}><i class="fa fa-paint-brush not-liked"></i></button>
+    <button class="unlike-button" {{action 'like' artwork}}><i class="fa fa-heart not-liked"></i></button>
   {{/if}}
-{{else}}
-  <button class="like-button" {{action 'promptLike'}}><i class="fa fa-paint-brush not-liked"></i></button>
-{{/if}}
+  {{/if}}
 {{#link-to 'artwork.show' artwork}}
 <img src="{{artwork._links.thumbnail.href}}" alt="" />
 <p class="artwork-title">{{artwork.title}}</p>

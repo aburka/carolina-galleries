@@ -1,6 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  tagName: 'div',
+
+  classNames: ['gallery'],
+
   isHidden: true,
 
   username: function(){
