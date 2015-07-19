@@ -1,0 +1,29 @@
+.gallery-contact{
+  max-width: 1000px;
+  margin: 25px auto;
+}
+
+.gallery-address{
+  display: inline-block;
+  width: 350px;
+  float: right;
+  padding-top: 125px;
+}
+
+.gallery-address>h3{
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.gallery-address>p{
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.map{
+  display: inline-block;
+  width: 600px;
+  float: left;
+}
