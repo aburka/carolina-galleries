@@ -20,16 +20,12 @@
   height: 50px;
 }
 
-///////////////////////////////
+///////////// Navigation bar with drop-down //////////////////
 nav {
   display: inline-block;
   width: 500px;
   margin-left: 50px;
   padding-top: 30px;
-}
-
-.site-navigation {
-
 }
 
 .menu {
@@ -42,7 +38,7 @@ nav {
 	display: block;
 	float: left;
 	margin: 0 2px 0 0;
-	padding: 0 12px 0 12px;
+	padding: 0 12px 15px 12px;
 	// position: relative;
 	text-decoration: none;
 }
@@ -57,31 +53,44 @@ nav {
 .dropDownList {
 	display: none;
   width: 100px;
+  height: 100px;
   position: absolute;
-  transition: visibility 0.65s ease-in;
-	left: 179px;
-  top: 44px;
-  padding-top: 31px;
-  background-color: $dark-gray;
+	left: 163px;
+  top: 52px;
+  background-color: white;
+  -webkit-clip-path: polygon(0% 15%, 35% 15%, 50% 0%, 65% 15%, 100% 15%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 25%, 35% 25%, 50% 0%, 65% 25%, 100% 25%, 100% 100%, 0% 100%);
+
 }
 
 .menu-item:hover + .dropDownList,
 .dropDownList:hover{
   display: inline-block;
+  transition: 0.5s;
 }
 
 .sub-menu {
   clear: both;
 	width: 100px;
-  padding: 10px;
+  padding: 10px 18px;
+  background-color: white;
 }
 
-.sub-menu:hover{
-  background-color: $medium-gray;
+.sub-menu>a{
+  color: $dark-gray;
 }
 
+.sub-menu>a:hover{
+  color: $red;
+}
+
+.sub-menu:hover + .hidden:hover{
+  background-color: white;
+}
 
 ////////////////////
+
+
 .user-login-create-container{
   display: inline-block;
   width: 400px;
