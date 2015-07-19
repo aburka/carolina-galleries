@@ -1,17 +1,29 @@
-@import url('http://fonts.googleapis.com/css?family=Raleway:300,500');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,500|Radley:400italic');
 
-$font: Raleway, sans-serif;
+$font: "Open Sans", sans-serif;
 
 h1, h2, h3, h4, p, a, li, button, {
   display: inline-block;
   font-family: $font;
   font-weight: 300;
   font-size: 15px;
+  font-style: normal;
+  line-height: 18px;
 }
 h1:hover, h2:hover, h3:hover, h4:hover, p:hover{
   cursor: default;
 }
 
+h2{
+  display: block;
+  font-family: "Radley", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 60px;
+  color: $dark-gray;
+}
 
 a{
   text-decoration: none;
