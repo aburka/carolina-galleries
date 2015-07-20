@@ -93,7 +93,7 @@ and (max-width : 1000px) {
 
   .explore-list-item{
     display: inline-block;
-    width: 650px;
+    max-width: 650px;
     vertical-align: top;
     margin-right: 0;
     background-color: $light-gray;
