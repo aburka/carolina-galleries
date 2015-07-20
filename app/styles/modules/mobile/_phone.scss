@@ -1,0 +1,228 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+  h1, h2, h3, h4, p, a{
+    line-height: 24px;
+  }
+
+  .main-heading-desktop{
+    display: none;
+  }
+
+  .main-heading-mobile{
+    display: block;
+    background-color: $dark-gray;
+  }
+
+  .main-logo{
+    display: none;
+  }
+
+  .site-navigation{
+    margin-left: 15px;
+  }
+
+  .dropDownList {
+  	display: none;
+    position: absolute;
+    z-index: 2;
+    width: 236px;
+    height: 450px;
+  	left: 9px;
+    top: 65px;
+    background-color: $dark-gray;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .menu-item:active + .dropDownList,
+  .dropDownList:active{
+    display: inline-block;
+  }
+
+  .sub-menu {
+    clear: both;
+  	width: 200px;
+    padding: 18px;
+    background-color: $dark-gray;
+    color: white;
+    font-size: 18px;
+  }
+
+  .sub-menu>a{
+    color: white;
+    font-size: 18px;
+  }
+
+  .fa-bars{
+    color: white;
+  }
+
+  .fa-bars:active{
+    color: $red;
+  }
+
+  .landing-hero{
+    display: block;
+    top: 75px;
+  }
+
+  .landing-headline{
+    top: -84px;
+  }
+
+  .landing-explore{
+    display: none;
+    // display: block;
+    // top: -30px;
+    // left: 36%;
+    // border: 1px solid rgba(0,0,0,0.7);
+    // border-radius: 3px;
+  }
+
+  .landing-explore:active{
+    background-color: $light-gray;
+  }
+///Explore section (cards at bottom of index)///
+  .explore{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  h2{
+    padding-bottom: 30px;
+  }
+
+  .explore-list-item{
+    width: 380px;
+    vertical-align: top;
+    text-align: center;
+    margin: 10px;
+    background-color: $light-gray;
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 5px;
+  }
+
+  .explore-caption{
+    display: inline-block;
+    width: 350px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .explore-title{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  .explore-copy{
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .artwork{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .artwork-list-item{
+    width: 380px;
+  }
+
+  p.artwork-title{
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .artwork-show{
+    max-width: 400px;
+    margin: 25px auto;
+    text-align: center;
+  }
+
+  .artwork-show>img{
+    max-width: 80%;
+    border: 5px solid white;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  }
+
+  .artwork-show-title{
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .artwork-show-date{
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .gallery{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  form.user-gallery-upload{
+    display: block;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+  }
+
+  form.user-gallery-upload>input{
+    width: 300px;
+  }
+
+  .gallery-edit{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .gallery-edit-button{
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .add-gallery{
+    display: block;
+    padding: 29px 0 11px 23px;
+  }
+
+  .gallery-contact{
+    max-width: 400px;
+    margin: 25px auto;
+  }
+
+  .gallery-address{
+    display: block;
+    width: 350px;
+    padding: 25px;
+  }
+
+  .gallery-address>h3{
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .gallery-address>p{
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .map{
+    width: 300px;
+  }
+
+}
