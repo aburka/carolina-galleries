@@ -1,4 +1,7 @@
 @media (min-width : 320px) and (max-width : 480px){
+  h1, h2{
+    line-height: 28px;
+  }
 
   .landing-hero{
     display: block;
@@ -79,7 +82,7 @@ and (max-width : 1000px) {
   }
 
   .explore{
-    max-width: 650px;
+    max-width: 700px;
     margin: -15px auto 0 auto;
   }
 
@@ -91,9 +94,9 @@ and (max-width : 1000px) {
     margin: 0;
   }
 
-  .explore-list-item{
-    display: inline-block;
-    max-width: 650px;
+  li.explore-list-item{
+    display: block;
+    width: 700px;
     vertical-align: top;
     margin-right: 0;
     background-color: $light-gray;
@@ -103,12 +106,12 @@ and (max-width : 1000px) {
   }
 
   img.explore-thumbnail{
-    max-width: 25%;
+    max-width: 30%;
   }
 
   .explore-caption{
     display: inline-block;
-    width: 430px;
+    max-width: 400px;
     height: 90px;
     padding: 33px 10px 0 20px;
     text-align: left;
@@ -125,5 +128,59 @@ and (max-width : 1000px) {
     font-size: 16px;
     line-height: 22px;
     text-align: left;
+  }
+}
+
+@media (min-width : 480px)
+and (max-width : 700px) {
+  h1, h2{
+    line-height: 28px;
+  }
+
+  .landing-headline{
+    top: -140px;
+  }
+
+  .landing-explore{
+    top: -120px;
+    width: 85px;
+    left: 40%;
+  }
+
+  .explore{
+    max-width: 480px;
+    margin: -15px auto 0 auto;
+  }
+
+  h2{
+    padding-bottom: 20px;
+  }
+
+  .explore-list{
+    margin: 0;
+  }
+
+  li.explore-list-item{
+    display: block;
+    width: 480px;
+    vertical-align: top;
+    margin-right: 0;
+    background-color: $light-gray;
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  img.explore-thumbnail{
+    max-width: 30%;
+  }
+
+  .explore-caption{
+    display: inline-block;
+    max-width: 400px;
+    height: 90px;
+    padding: 33px 10px 0 20px;
+    text-align: left;
+    vertical-align: top;
   }
 }
