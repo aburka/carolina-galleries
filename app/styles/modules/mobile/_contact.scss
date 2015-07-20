@@ -1,0 +1,32 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .gallery-contact{
+    max-width: 400px;
+    margin: 25px auto;
+  }
+
+  .gallery-address{
+    display: block;
+    width: 350px;
+    padding: 25px;
+  }
+
+  .gallery-address>h3{
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .gallery-address>p{
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .map{
+    width: 300px;
+  }
+
+}

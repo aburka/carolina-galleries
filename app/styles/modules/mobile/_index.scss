@@ -1,0 +1,60 @@
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+  .landing-hero{
+    display: block;
+    top: 75px;
+  }
+
+  .landing-headline{
+    top: -84px;
+  }
+
+  .landing-explore{
+    display: none;
+  }
+
+  .landing-explore:active{
+    background-color: $light-gray;
+  }
+///Explore section (cards at bottom of index)///
+  .explore{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  h2{
+    padding-bottom: 30px;
+  }
+
+  .explore-list-item{
+    width: 380px;
+    vertical-align: top;
+    text-align: center;
+    margin: 10px;
+    background-color: $light-gray;
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 5px;
+  }
+
+  .explore-caption{
+    display: inline-block;
+    width: 350px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .explore-title{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  .explore-copy{
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+}

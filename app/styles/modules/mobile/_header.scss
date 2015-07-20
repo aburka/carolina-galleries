@@ -1,0 +1,60 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .main-heading-desktop{
+    display: none;
+  }
+
+  .main-heading-mobile{
+    display: block;
+    background-color: $dark-gray;
+  }
+
+  .main-logo{
+    display: none;
+  }
+
+  .site-navigation{
+    margin-left: 15px;
+  }
+
+  .dropDownList {
+  	display: none;
+    position: absolute;
+    z-index: 2;
+    width: 236px;
+    height: 450px;
+  	left: 9px;
+    top: 65px;
+    background-color: $dark-gray;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .menu-item:active + .dropDownList,
+  .dropDownList:active{
+    display: inline-block;
+  }
+
+  .sub-menu {
+    clear: both;
+  	width: 200px;
+    padding: 18px;
+    background-color: $dark-gray;
+    color: white;
+    font-size: 18px;
+  }
+
+  .sub-menu>a{
+    color: white;
+    font-size: 18px;
+  }
+
+  .fa-bars{
+    color: white;
+  }
+
+  .fa-bars:active{
+    color: $red;
+  }
+}
