@@ -1,0 +1,35 @@
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .session,
+  .new-user{
+    display: inline-block;
+    max-width: 300px;
+    height: 400px;
+    margin-top: 25px;
+    left: 3%;
+  }
+
+  form.login-form>input{
+    max-width: 300px;
+  }
+
+  p.login,
+  p.signup{
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  p.login:active,
+  p.signup:active{
+    color: $red;
+  }
+
+  h1{
+    font-size: 24px;
+    font-weight: 500;
+    color: $red;
+  }
+
+
+}

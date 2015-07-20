@@ -20,8 +20,12 @@ and (max-device-width : 480px) {
   }
 ///Explore section (cards at bottom of index)///
   .explore{
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
+  }
+
+  .explore>img{
+    max-width: 100%;
   }
 
   h2{
@@ -29,7 +33,7 @@ and (max-device-width : 480px) {
   }
 
   .explore-list-item{
-    width: 380px;
+    width: 280px;
     vertical-align: top;
     text-align: center;
     margin: 10px;
@@ -40,16 +44,17 @@ and (max-device-width : 480px) {
 
   .explore-caption{
     display: inline-block;
-    width: 350px;
-    height: 100px;
     padding: 10px;
     text-align: center;
+    width: 260px;
   }
 
   .explore-title{
     font-size: 25px;
     line-height: 30px;
     font-weight: 500;
+    width: 260px;
+
   }
 
   .explore-copy{

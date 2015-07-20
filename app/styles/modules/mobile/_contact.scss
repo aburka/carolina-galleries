@@ -3,14 +3,15 @@
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
   .gallery-contact{
-    max-width: 400px;
-    margin: 25px auto;
+    max-width: 300px;
+    margin: 0px auto;
   }
 
   .gallery-address{
     display: block;
-    width: 350px;
-    padding: 25px;
+    max-width: 300px;
+    margin: 20px 0;
+    padding: 0;
   }
 
   .gallery-address>h3{
@@ -26,7 +27,7 @@ and (max-device-width : 480px) {
   }
 
   .map{
-    width: 300px;
+    max-width: 300px;
   }
 
 }

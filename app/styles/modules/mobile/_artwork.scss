@@ -6,12 +6,12 @@ and (max-device-width : 480px) {
     line-height: 24px;
   }
   .artwork{
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
   }
 
   .artwork-list-item{
-    width: 380px;
+    max-width: 280px;
   }
 
   p.artwork-title{
@@ -20,7 +20,7 @@ and (max-device-width : 480px) {
   }
 
   .artwork-show{
-    max-width: 400px;
+    max-width: 300px;
     margin: 25px auto;
     text-align: center;
   }
@@ -34,7 +34,7 @@ and (max-device-width : 480px) {
   .artwork-show-title{
     margin: 0 auto;
     display: block;
-    width: 400px;
+    width: 300px;
     font-size: 20px;
     line-height: 24px;
     font-weight: 500;
@@ -48,7 +48,7 @@ and (max-device-width : 480px) {
 
 ////////community gallery////////
   .gallery{
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
   }
 

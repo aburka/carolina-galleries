@@ -48,7 +48,8 @@
             <li class="sub-menu">{{#link-to 'users.current'}}{{session.currentUser.firstName}} {{session.currentUser.lastName}}{{/link-to}}</li>
             <li class="sub-menu" {{action 'invalidateSession'}}>Logout</li>
           {{else}}
-            <li class="sub-menu">Log In or Sign Up</li>
+            <li class="sub-menu">{{#link-to 'sessions.create'}}Log In{{/link-to}}</li>
+            <li class="sub-menu">{{#link-to 'users.create' createUser="createUser" model=model}}Sign Up{{/link-to}}</li>
           {{/if}}
         </ul>
     </ul>

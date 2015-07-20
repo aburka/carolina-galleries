@@ -7,6 +7,7 @@ and (max-device-width : 480px) {
   }
 
   .main-heading-mobile{
+    max-width: 100%;
     display: block;
     background-color: $dark-gray;
   }
@@ -17,6 +18,7 @@ and (max-device-width : 480px) {
 
   .site-navigation{
     margin-left: 15px;
+    width: 300px;
   }
 
   .dropDownList {
