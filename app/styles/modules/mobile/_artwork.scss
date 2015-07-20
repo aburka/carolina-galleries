@@ -1,7 +1,4 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
+@media (min-width : 320px) and (max-width : 480px){
   .artwork{
     max-width: 300px;
     margin: 0 auto;
@@ -78,9 +75,8 @@ and (max-device-width : 480px) {
   }
 }
 
-@media only screen
-and (min-device-width : 480px)
-and (max-device-width : 780px) {
+@media (min-width : 480px)
+and (max-width : 1000px) {
   .artwork{
     max-width: 650px;
     margin: 0 auto;
