@@ -2,9 +2,6 @@
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
-  h1, h2, h3, h4, p, a{
-    line-height: 24px;
-  }
   .artwork{
     max-width: 300px;
     margin: 0 auto;
@@ -60,7 +57,7 @@ and (max-device-width : 480px) {
   }
 
   form.user-gallery-upload>input{
-    width: 300px;
+    width: 250px;
   }
 
   .gallery-edit{
@@ -77,6 +74,90 @@ and (max-device-width : 480px) {
 
   .add-gallery{
     display: block;
-    padding: 29px 0 11px 23px;
+    padding: 29px 0 11px 10px;
+  }
+}
+
+@media only screen
+and (min-device-width : 480px)
+and (max-device-width : 780px) {
+  .artwork{
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .artwork-list-item{
+    max-width: 400px;
+  }
+
+  p.artwork-title{
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .artwork-show{
+    max-width: 800px;
+    margin: 25px auto;
+    text-align: center;
+  }
+
+  .artwork-show>img{
+    max-width: 80%;
+    border: 5px solid white;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  }
+
+  .artwork-show-title{
+    margin: 0 auto;
+    display: block;
+    width: 500px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .artwork-show-date{
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  ////////community gallery////////
+  .gallery{
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  form.user-gallery-upload{
+    display: block;
+    width: 650px;
+    height: 100px;
+    padding: 10px;
+  }
+
+  form.user-gallery-upload>input{
+    width: 150px;
+    margin-top: 5px;
+  }
+
+  .gallery-edit{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .gallery-edit-button{
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .add-gallery{
+    display: block;
+    padding: 29px 0 11px 10px;
+  }
+
+  button.upload-button{
+    margin: 0;
   }
 }

@@ -33,8 +33,8 @@ and (max-device-width : 480px) {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 
-  .menu-item:active + .dropDownList,
-  .dropDownList:active{
+  .menu-item:focus + .dropDownList,
+  .dropDownList:focus{
     display: inline-block;
   }
 
@@ -58,5 +58,51 @@ and (max-device-width : 480px) {
 
   .fa-bars:active{
     color: $red;
+  }
+}
+
+@media only screen
+and (min-device-width : 480px)
+and (max-device-width : 780px) {
+
+  .main-logo{
+    float: left;
+    margin-left: 25px;
+    margin-top: 12px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .site-navigation{
+    margin-left: 5px;
+    width: 313px;
+  }
+
+  .dropDownList {
+  	//display: none;
+    width: 136px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+  	left: 78px;
+    top: 50px;
+    background-color: white;
+    -webkit-clip-path: polygon(0% 15%, 10% 15%, 20% 0%, 30% 15%, 100% 15%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 15%, 10% 15%, 20% 0%, 30% 15%, 100% 15%, 100% 100%, 0% 100%);
+    box-shadow: 1px 1px 1px rgba(61,61,61,0.2);
+    border-radius: 2px;
+  }
+
+  .user-login-create-container{
+    display: inline-block;
+    width: 300px;
+    float: right;
+    margin-right: 15px;
+  }
+
+  .user-login-create{
+    color: white;
+    float: right;
+    margin-right: 15px;
   }
 }

@@ -9,12 +9,12 @@
   box-shadow: 1px 1px 1px rgba(67, 67, 61, 0.25);
 }
 
-.main-heading a{
+.main-heading-desktop a{
   color: white;
   text-decoration: none;
 }
 
-.main-heading a:hover{
+.main-heading-desktop a:hover{
   color: $medium-gray;
   transition: 0.3s;
 
@@ -32,7 +32,7 @@
 nav {
   display: inline-block;
   width: 400px;
-  margin-left: 50px;
+  margin-left: 25px;
   padding-top: 30px;
 }
 
@@ -60,10 +60,10 @@ nav {
 
 .dropDownList {
 	display: none;
-  width: 100px;
+  width: 136px;
   height: 100px;
   position: absolute;
-	left: 163px;
+	left: 148px;
   top: 50px;
   background-color: white;
   -webkit-clip-path: polygon(0% 15%, 35% 15%, 50% 0%, 65% 15%, 100% 15%, 100% 100%, 0% 100%);
@@ -101,7 +101,7 @@ nav {
 
 .user-login-create-container{
   display: inline-block;
-  width: 400px;
+  width: 300px;
   float: right;
   margin-right: 25px;
 }

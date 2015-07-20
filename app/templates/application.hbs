@@ -16,7 +16,7 @@
         <li class="menu-item">{{#link-to 'contact'}}Contact{{/link-to}}</li>
     </ul>
 </nav>
-  <div class="user-login-create-container desktop">
+  <div class="user-login-create-container">
   {{#if session.isAuthenticated}}
     <span class="user-login-create">
     {{#link-to 'users.current'}}<p class="current-user">{{session.currentUser.firstName}} {{session.currentUser.lastName}}</p>{{/link-to}}

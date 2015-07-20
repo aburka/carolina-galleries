@@ -63,3 +63,70 @@ and (max-device-width : 480px) {
     text-align: center;
   }
 }
+
+@media only screen
+and (min-device-width : 480px)
+and (max-device-width : 780px) {
+  .landing-headline{
+    top: -185px;
+  }
+
+  .landing-explore{
+    top: -170px;
+    width: 85px;
+  }
+
+  .landing-explore:focus{
+    background-color: rgba(255,255,255,0.7);
+    transition: 0.3s;
+  }
+
+  .explore{
+    max-width: 650px;
+    margin: -15px auto 0 auto;
+  }
+
+  h2{
+    padding-bottom: 20px;
+  }
+
+  .explore-list{
+    margin: 0;
+  }
+
+  .explore-list-item{
+    display: inline-block;
+    width: 650px;
+    vertical-align: top;
+    margin-right: 0;
+    background-color: $light-gray;
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  img.explore-thumbnail{
+    max-width: 25%;
+  }
+
+  .explore-caption{
+    display: inline-block;
+    width: 430px;
+    height: 90px;
+    padding: 33px 10px 0 20px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .explore-title{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+
+  .explore-copy{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+  }
+}

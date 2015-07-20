@@ -1,4 +1,3 @@
-/* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
@@ -28,6 +27,65 @@ and (max-device-width : 480px) {
 
   .map{
     max-width: 300px;
+    position: relative;
+    padding-bottom: 65.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
   }
+
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+}
+
+@media only screen
+and (min-device-width : 480px)
+and (max-device-width : 780px) {
+  .gallery-contact{
+    max-width: 650px;
+    margin: 0px auto;
+  }
+
+  .gallery-address{
+    display: block;
+    max-width: 600px;
+    margin: 35px 0;
+    padding: 0;
+    float: none;
+  }
+
+  .gallery-address>h3{
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .gallery-address>p{
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .map{
+    max-width: 650px;
+    position: relative;
+    padding-bottom: 65.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
 
 }
