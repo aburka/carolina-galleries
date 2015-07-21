@@ -10,7 +10,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     delete: function(artwork){
       artwork.destroyRecord();
     },
-    
+
     edit: function(artwork){
       artwork.save();
     },
@@ -19,7 +19,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
       var upload = this.store.createRecord('image', {
         url : blob.url,
         filename : blob.filename
-      })
+      });
       upload.save(blob);
     }
   }
