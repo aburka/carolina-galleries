@@ -16,10 +16,13 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     },
 
     filepick: function(blob){
-      var username = this.get('session.currentUser.firstName');
+      var firstName = this.get('session.currentUser.firstName');
+      var lastName = this.get('session.currentUser.lastName');
+      var name = firstName + " " + lastName;
       var upload = this.store.createRecord('image', {
         url : blob.url,
-        filename : blob.filename
+        filename : blob.filename,
+        name : name
       });
       upload.save(blob);
     }
