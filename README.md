@@ -12,6 +12,7 @@ Carolina Galleries was written in the [Ember](http://emberjs.com/) front-end MVC
 * [Ember Simple Auth](http://ember-simple-auth.com/)
 * [Ember Parse Adapter](http://clintjhill.github.io/ember-parse-adapter/)
 * [Ember Simple Auth Parse](https://github.com/jacobthemyth/ember-simple-auth-parse)
+* [Filepicker](https://www.filepicker.com/)
 
 ## Other Resources
 * [Ember Simple Modal](http://blog.atmartin.io/a-simple-modal-for-ember-v2-component-edition/)
