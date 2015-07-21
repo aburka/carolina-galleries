@@ -9,7 +9,6 @@ Parse.Cloud.define("like", function(request, response) {
 
   response.success({
     artwork: request.params.artwork,
-    message: "Hello " + user.get('firstName'),
   });
 });
 
@@ -19,6 +18,5 @@ Parse.Cloud.define("unlike", function(request, response) {
 
   response.success({
     artwork: request.params.artwork,
-    message: "Hello " + user.get('firstName'),
   });
 });

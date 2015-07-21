@@ -9,13 +9,9 @@ export default Ember.Route.extend({
       contentType: "application/json",
       headers: {
         'X-Xapp-Token': "JvTPWe4WsQO-xqX6Bts49pVqXlee2Shc4lnzLjBI7ExeeIFLnGjN5QnM2lzTKVZHZ-Iz94IlpS1Fblg2GmQreqniLseOnht3DI2jqZ-hWftG8t5OOIkq3xJpfSMOKqr8QkjJGSklCLRfAni7Rkws35bHjFcrWudCOxnzAho7fUer_DqEiBlMDwJP-xKODwubFtvpZPQyRhHOwFh_99GtYhAwcCK2CBlwmD4CD-08np8="
-      },
-
-      success: function(data){
-          console.log("success:sculpture", data);
       }
-      });
-    },
+    });
+  },
 
     actions: {
       like: function(artwork) {
@@ -24,9 +20,9 @@ export default Ember.Route.extend({
           data: {
             artwork: artwork
           }
-        }).then(function(response){
-          console.log(response);
-        });
+        }).then(function(){
+          this.get('session.currentUser.Artwork').addObject(artwork);
+        }.bind(this));
       },
       unlike: function(artwork) {
         var adapter = this.store.adapterFor('application');
@@ -34,9 +30,9 @@ export default Ember.Route.extend({
           data: {
             artwork: artwork
           }
-        }).then(function(response){
-          console.log(response);
-        });
+        }).then(function(){
+          this.get('session.currentUser.Artwork').removeObject(artwork);
+        }.bind(this));
       }
     }
 });

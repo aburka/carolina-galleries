@@ -16,6 +16,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     },
 
     filepick: function(blob){
+      var username = this.get('session.currentUser.firstName');
       var upload = this.store.createRecord('image', {
         url : blob.url,
         filename : blob.filename

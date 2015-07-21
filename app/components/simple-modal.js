@@ -6,16 +6,17 @@ export default Ember.Component.extend({
         var exposedName = "comp-" + this.get('id');
         app_controller.set(exposedName, this);
     }.on('init'),
-    actions: {
-        toggleModal: function() {
-            this.toggleProperty('enabled');
-        },
-        closeModal: function(){
+    
+  actions: {
+      toggleModal: function() {
           this.toggleProperty('enabled');
-        },
-        createUser: function(){
-          console.log('simple-modal component');
-          this.sendAction('createUser', this.get('model'));
-        }
+      },
+      closeModal: function(){
+        this.toggleProperty('enabled');
+      },
+      createUser: function(){
+        console.log('simple-modal component');
+        this.sendAction('createUser', this.get('model'));
+      }
     },
 });

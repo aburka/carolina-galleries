@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'li',
-  
+
   classNames:['artwork-list-item'],
 
   isLiked: false,
@@ -19,7 +19,6 @@ export default Ember.Component.extend({
   },
 
   isLiked: function(){
-    //var artworkArr = user._data.Artwork;
     var liked = this.get('session.currentUser.Artwork').filter(function(art){
       return this.get('artwork.id') === art.id;
     }.bind(this));

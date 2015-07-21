@@ -9,5 +9,4 @@ export default Ember.Component.extend({
       this.sendAction('unlike', artwork);
     }
   },
-
 });

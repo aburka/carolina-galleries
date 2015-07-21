@@ -15,14 +15,10 @@ export default Ember.Component.extend({
     unlike: function(artwork){
       this.sendAction('unlike', artwork);
       this.set('isLiked', false);
-    },
-    promptLike: function(){
-      alert('You must be logged in to like this work of art!');
     }
   },
 
   isLiked: function(){
-    //var artworkArr = user._data.Artwork;
     var liked = this.get('session.currentUser.Artwork').filter(function(art){
       return this.get('artwork.id') === art.id;
     }.bind(this));
