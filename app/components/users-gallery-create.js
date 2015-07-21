@@ -30,6 +30,12 @@ export default Ember.Component.extend({
     },
     cancel: function(){
       this.set('isHidden', true);
+    },
+    filepick: function(){
+      filepicker.pick(function(params){
+        this.sendAction('filepick', params);
+      }.bind(this));
     }
+
   }
 });
