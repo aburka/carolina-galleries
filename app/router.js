@@ -22,7 +22,7 @@ Router.map(function() {
     this.route('create');
   });
   this.route('gallery', function() {
-    this.route('show');
+    this.route('show', {path:':id'});
   });
 });
 

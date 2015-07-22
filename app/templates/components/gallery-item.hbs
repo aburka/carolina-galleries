@@ -11,6 +11,8 @@
   {{/if}}
 </div>
 {{/if}}
-<p class="artwork-title gallery-title">{{artwork.filename}}</p>
-<p class="artwork-title gallery">Added by: {{artwork.name}}</p>
-<img src="{{artwork.url}}" alt="" />
+{{#link-to 'gallery.show' artwork}}
+  <p class="artwork-title gallery-title">{{artwork.filename}}</p>
+  <p class="artwork-title gallery">Added by: {{artwork.name}}</p>
+  <img src="{{artwork.url}}" alt="" />
+{{/link-to}}
