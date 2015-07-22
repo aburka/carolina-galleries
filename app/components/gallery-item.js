@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   tagName: 'li',
 
   classNames: ['artwork-list-item'],
-  
+
   isHidden: true,
 
   isAdmin: function(){

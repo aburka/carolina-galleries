@@ -1,6 +1,6 @@
 import { moduleForComponent, test } from 'ember-qunit';
 
-moduleForComponent('users-gallery-item', 'Unit | Component | users gallery item', {
+moduleForComponent('gallery-index', 'Unit | Component | gallery index', {
   // Specify the other units that are required for this test
   // needs: ['component:foo', 'helper:bar'],
   unit: true

@@ -11,7 +11,7 @@
         <li class="sub-menu">{{#link-to 'artwork.sculpture'}}Sculpture{{/link-to}}</li>
       </ul>
       {{#if session.isAuthenticated}}
-        <li class="menu-item">{{#link-to 'users.gallery'}}Community Gallery{{/link-to}}</li>
+        <li class="menu-item">{{#link-to 'gallery.index'}}Community Gallery{{/link-to}}</li>
       {{/if}}
         <li class="menu-item">{{#link-to 'contact'}}Contact{{/link-to}}</li>
     </ul>
@@ -41,7 +41,7 @@
         <li class="sub-menu">{{#link-to 'artwork.painting'}}Paintings{{/link-to}}</li>
         <li class="sub-menu">{{#link-to 'artwork.sculpture'}}Sculpture{{/link-to}}</li>
         {{#if session.isAuthenticated}}
-          <li class="sub-menu">{{#link-to 'users.gallery'}}Community Gallery{{/link-to}}</li>
+          <li class="sub-menu">{{#link-to 'gallery.index'}}Community Gallery{{/link-to}}</li>
         {{/if}}
           <li class="sub-menu">{{#link-to 'contact'}}Contact{{/link-to}}</li>
           {{#if session.isAuthenticated}}

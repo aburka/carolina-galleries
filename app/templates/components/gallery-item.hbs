@@ -1,0 +1,16 @@
+{{#if isAdmin}}
+<div class="gallery-edit">
+  <div class="gallery-edit-button" {{action 'delete'}}><i class="fa fa-trash-o"></i></div>
+  {{#if isHidden}}
+    <div class="gallery-edit-button" {{action 'showEdit'}}><i class="fa fa-pencil"></i></div>
+  {{else}}
+    {{input class="gallery-edit-field" type="text" value=artwork.url placeholder="url"}}
+    {{input class="gallery-edit-field" type="text" value=artwork.filename placeholder="title"}}
+    <button class="gallery-edit" {{action 'edit' artwork}}>Edit</button>
+    <button class="gallery-edit" {{action 'cancel'}}>Cancel</button>
+  {{/if}}
+</div>
+{{/if}}
+<p class="artwork-title gallery-title">{{artwork.filename}}</p>
+<p class="artwork-title gallery">Added by: {{artwork.name}}</p>
+<img src="{{artwork.url}}" alt="" />
