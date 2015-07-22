@@ -10,16 +10,22 @@
   padding-top: 125px;
 }
 
-.gallery-address>h3{
+.gallery-address>h3,
+.gallery-hours>h3{
   display: block;
   font-size: 24px;
   font-weight: 500;
+  line-height: 30px;
 }
 
 .gallery-address>p{
   display: block;
   font-size: 18px;
   line-height: 25px;
+}
+
+.gallery-hours{
+  padding-top: 40px;
 }
 
 .map{
