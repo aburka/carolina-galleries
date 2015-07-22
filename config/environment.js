@@ -19,12 +19,12 @@ module.exports = function(environment) {
     },
 
     contentSecurityPolicy: {
-      'default-src': "'self' www.google.com",
+      'default-src': "'self' www.google.com dialog.filepicker.io www.filepicker.io",
       'script-src': "'self' api.artsy.net",
       'font-src': "'self' *",
       'connect-src': "'self' *",
       'img-src': "'self' *",
-      'style-src': "'self' *",
+      'style-src': "'self' www.filepicker.io maxcdn.bootstrapcdn.com fonts.googleapis.com",
       'media-src': "'self'",
     },
 
