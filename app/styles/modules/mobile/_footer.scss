@@ -1,0 +1,53 @@
+@media (min-width : 320px ) and (max-width : 750px){
+  footer{
+    height: 175px;
+  }
+
+  .footer-copyright{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-copyright>p{
+    padding: 15px 0 10px 0;
+  }
+
+  .mc-email-signup{
+    display: block;
+    width: 300px;
+    float: none;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  input.mce-EMAIL{
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+  }
+
+  input.mc-embedded-subscribe{
+    margin: 0;
+    text-decoration: underline;
+  }
+
+  input.mc-embedded-subscribe:active{
+    color: $medium-gray;
+    cursor: pointer;
+  }
+}
+
+@media (min-width : 751px) and (max-width : 1000px) {
+
+  .footer-copyright{
+    width: 225px;
+    margin: 30px 0 0 15px;
+  }
+
+  .mc-email-signup{
+    width: 475px;
+  }
+
+}

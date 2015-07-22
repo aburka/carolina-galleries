@@ -9,8 +9,7 @@ footer{
 .footer-copyright{
   display: inline-block;
   width: 300px;
-  margin-left: 75px;
-  margin-top: 30px;
+  margin: 30px 0 0 75px;
 }
 
 .footer-copyright>p{
@@ -19,10 +18,9 @@ footer{
 
 .mc-email-signup{
   display: inline-block;
-  width: 600px;
+  width: 540px;
   float: right;
-  margin-top: 10px;
-  margin-right: 15px;
+  margin: 10px 0 0 15px;
 }
 
 .validate>p{
@@ -33,7 +31,7 @@ input.mce-EMAIL{
   display: inline-block;
   width: 200px;
   height: 30px;
-  margin-left: 10px;
+  margin: 0 0 10px 0;
   background-color: $dark-gray;
   color: white;
   border: none;
