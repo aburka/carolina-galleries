@@ -53,8 +53,21 @@
 }
 
 //font awesome heart
+i.fa>.fa-heart:focus{
+  outline:0;
+}
+
 .liked{
   color: $red;
+}
+
+.liked:focus{
+  outline:0;
+}
+
+button.like-button:focus,
+button.unlike-button:focus{
+  outline: 0;
 }
 
 .not-liked{
