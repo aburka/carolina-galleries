@@ -1,7 +1,13 @@
 @media(min-width : 320px) and (max-width : 480px){
+  .user-login-create{
+    float: none;
+  }
+
   .session,
   .new-user{
     display: inline-block;
+    position: relative;
+    float: none;
     max-width: 300px;
     height: 400px;
     margin-top: 25px;
@@ -32,8 +38,15 @@
 }
 
 @media(min-width : 481px) and (max-width : 1000px){
+
+  .user-login-create{
+    float: none;
+  }
+  
   .session,
   .new-user{
+    float: none;
+    position: relative;
     max-width: 500px;
     left: 5%;
 
