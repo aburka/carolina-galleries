@@ -20,3 +20,14 @@ Parse.Cloud.define("unlike", function(request, response) {
     artwork: request.params.artwork,
   });
 });
+
+Parse.Cloud.beforeSave(Parse.User, function(request, response) {
+  if (!request.object.get('firebaseToken')){
+    Parse.Cloud.useMasterKey();
+    var FirebaseTokenGenerator = require("cloud/firebase-token-generator-node");
+    var tokenGenerator = new FirebaseTokenGenerator("F7dew1FzmLTzve9szlfES26vr4Vm4q2YbnZgjO58");
+    var token = tokenGenerator.createToken({uid: request.object.id});
+    request.object.set("firebaseToken", token);
+  }
+  response.success();
+});

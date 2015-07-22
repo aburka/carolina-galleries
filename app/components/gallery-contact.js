@@ -6,16 +6,15 @@ export default Ember.Component.extend({
       this.sendAction('action', this.get('model'));
     }
   },
-  // 
-  // isOpen: false,
-  //
-  // open: function(){
-  //   var now = new Date();
-  //   var weekDay = now.getDay();
-  //   var hour = now.getHours();
-  //   if (weekDay > 3 && weekDay  < 6 && hour > 8 && hour < 19){
-  //     return true;
-  //   }
-  //   this.set('isOpen', true);
-  // }.property('open')
+
+  isOpen: function(){
+    var now = new Date();
+    var weekDay = now.getDay();
+    var hour = now.getUTCHours();
+    var wed = 3;
+    var sat = 6;
+    if (weekDay >= wed && weekDay <= sat && hour > 12 && hour < 23){
+      return true;
+    }
+  }.property()
 });

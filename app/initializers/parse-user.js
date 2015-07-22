@@ -5,7 +5,8 @@ export function initialize() {
   ParseUser.reopen({
     firstName: DS.attr('string'),
     lastName: DS.attr('string'),
-    Artwork: DS.attr()
+    Artwork: DS.attr(),
+    firebaseToken: DS.attr('string')
   });
 }
 
