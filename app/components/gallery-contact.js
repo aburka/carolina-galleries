@@ -3,7 +3,10 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     submitContact: function(){
-      this.sendAction('action', this.get('model'));
+      this.sendAction('action', this.getProperties('name', 'email', 'comments'));
+      this.set('name');
+      this.set('email');
+      this.set('comments');
     }
   },
 
