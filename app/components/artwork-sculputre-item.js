@@ -5,8 +5,6 @@ export default Ember.Component.extend({
 
   classNames:['artwork-list-item'],
 
-  isLiked: false,
-
   actions: {
     like: function(artwork) {
       this.sendAction('like', artwork);
