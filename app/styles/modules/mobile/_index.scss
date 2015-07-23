@@ -1,5 +1,6 @@
 @media (min-width : 320px) and (max-width : 480px){
   h1, h2{
+    font-size: 22px;
     line-height: 28px;
   }
 
@@ -9,7 +10,17 @@
   }
 
   .landing-headline{
-    top: -84px;
+    top: -70px;
+  }
+
+  h1.landing-headline{
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .landing-explore>h2{
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .landing-explore{
@@ -48,6 +59,7 @@
     padding: 10px;
     text-align: center;
     width: 260px;
+    height: 110px;
   }
 
   .explore-title{
@@ -96,7 +108,7 @@ and (max-width : 1000px) {
 
   li.explore-list-item{
     display: block;
-    width: 700px;
+    width: 680px;
     vertical-align: top;
     margin-right: 0;
     background-color: $light-gray;
