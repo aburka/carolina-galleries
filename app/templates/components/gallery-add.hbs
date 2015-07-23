@@ -1,1 +1,9 @@
-<div class="add-gallery" {{action 'filepick'}}><i class="fa fa-plus"></i></div>
+<div class="add-gallery" {{action 'filepick'}}><i class="fa fa-plus"> Add to Community Gallery</i></div>
+<div class="chat">
+  {{#if isHidden}}
+    <i class="fa fa-comments" {{action 'openChat'}}> Chat</i>
+    {{else}}
+    <i class="fa fa-comments" {{action 'closeChat'}}> Close Chat</i>
+  {{fire-chat user=session.currentUser}}
+  {{/if}}
+</div>

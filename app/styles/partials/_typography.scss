@@ -80,11 +80,13 @@ input.gallery-edit-field{
   margin: 15px 22px;
 }
 
-.fa-plus{
+.fa-plus,
+.fa-comments{
   color: $dark-gray;
 }
 
-.fa-plus:hover{
+.fa-plus:hover,
+.fa-comments:hover{
   color: $red;
   cursor: pointer;
 }
