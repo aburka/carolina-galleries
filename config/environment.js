@@ -20,11 +20,11 @@ module.exports = function(environment) {
 
     contentSecurityPolicy: {
       'default-src': "'self' www.google.com dialog.filepicker.io www.filepicker.io",
-      'script-src': "'self' api.artsy.net",
+      'script-src': "'self' api.artsy.net firebaseio.com",
       'font-src': "'self' *",
       'connect-src': "'self' *",
       'img-src': "'self' *",
-      'style-src': "'self' www.filepicker.io maxcdn.bootstrapcdn.com fonts.googleapis.com",
+      'style-src': "'self' *",
       'media-src': "'self'",
     },
 
