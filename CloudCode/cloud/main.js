@@ -21,13 +21,13 @@ Parse.Cloud.define("unlike", function(request, response) {
   });
 });
 
-Parse.Cloud.beforeSave(Parse.User, function(request, response) {
+Parse.Cloud.afterSave(Parse.User, function(request) {
   if (!request.object.get('firebaseToken')){
     Parse.Cloud.useMasterKey();
     var FirebaseTokenGenerator = require("cloud/firebase-token-generator-node");
     var tokenGenerator = new FirebaseTokenGenerator("F7dew1FzmLTzve9szlfES26vr4Vm4q2YbnZgjO58");
     var token = tokenGenerator.createToken({uid: request.object.id});
     request.object.set("firebaseToken", token);
+    return request.object.save();
   }
-  response.success();
 });
