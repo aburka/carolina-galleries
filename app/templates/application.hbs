@@ -1,3 +1,78 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<section class="main-heading-desktop">
+  <div class="main-logo">
+    {{#link-to 'index'}}<img src="images/cg-white.png" alt="Carolina Galleries" />{{/link-to}}
+  </div>
+  <nav class="site-navigation">
+    <ul class="menu desktop">
+      <li class="menu-item ">{{#link-to 'artwork.index'}}Artwork{{/link-to}}</li>
+      <ul class="dropDownList">
+        <li class="sub-menu hidden"></li>
+        <li class="sub-menu">{{#link-to 'artwork.painting'}}Paintings{{/link-to}}</li>
+        <li class="sub-menu">{{#link-to 'artwork.sculpture'}}Sculpture{{/link-to}}</li>
+      </ul>
+      {{#if session.isAuthenticated}}
+        <li class="menu-item">{{#link-to 'gallery.index'}}Community Gallery{{/link-to}}</li>
+      {{/if}}
+        <li class="menu-item">{{#link-to 'contact'}}Contact{{/link-to}}</li>
+    </ul>
+</nav>
+  <div class="user-login-create-container">
+  {{#if session.isAuthenticated}}
+    <span class="user-login-create">
+    {{#link-to 'users.current'}}<p class="current-user">{{session.currentUser.firstName}} {{session.currentUser.lastName}}</p>{{/link-to}}
+    <p class="logout" {{action 'invalidateSession'}}>Logout</p>
+    </span>
+  {{else}}
+    <p class="open-signup" {{action 'openModal' 'modal-main'}}>Log In or Sign Up</p>
+    {{#simple-modal id='modal-main' enabled=false createUser="createUser" model=model}}
+
+    {{/simple-modal}}
+  {{/if}}
+</div>
+</section>
+
+<section class="main-heading-mobile">
+  <nav class="site-navigation">
+    <ul class="menu">
+      <li class="menu-item"><i class="fa fa-bars"></i></li>
+      <ul class="dropDownList">
+        <li class="sub-menu">{{#link-to 'index'}}Home{{/link-to}}</li>
+        <li class="sub-menu">{{#link-to 'artwork.index'}}Artwork{{/link-to}}</li>
+        <li class="sub-menu">{{#link-to 'artwork.painting'}}Paintings{{/link-to}}</li>
+        <li class="sub-menu">{{#link-to 'artwork.sculpture'}}Sculpture{{/link-to}}</li>
+        {{#if session.isAuthenticated}}
+          <li class="sub-menu">{{#link-to 'gallery.index'}}Community Gallery{{/link-to}}</li>
+        {{/if}}
+          <li class="sub-menu">{{#link-to 'contact'}}Contact{{/link-to}}</li>
+          {{#if session.isAuthenticated}}
+            <li class="sub-menu">{{#link-to 'users.current'}}{{session.currentUser.firstName}} {{session.currentUser.lastName}}{{/link-to}}</li>
+            <li class="sub-menu" {{action 'invalidateSession'}}>Logout</li>
+          {{else}}
+            <li class="sub-menu">{{#link-to 'sessions.create'}}Log In{{/link-to}}</li>
+            <li class="sub-menu">{{#link-to 'users.create' createUser="createUser" model=model}}Sign Up{{/link-to}}</li>
+          {{/if}}
+        </ul>
+    </ul>
+</nav>
+</section>
 
 {{outlet}}
+
+<footer>
+  <div class="footer-copyright">
+    <p>
+      copyright 2015 Carolina Galleries
+    </p>
+  </div>
+  <div class="mc-email-signup">
+    <form action="//github.us11.list-manage.com/subscribe/post?u=caeb93e7ec4f819cde8fb98cf&amp;id=968b19ee69" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        {{!-- <div id="mc_embed_signup_scroll"> --}}
+    	<p>Subscribe to our email list:</p>
+    	<input type="email" value="" name="EMAIL" class="email" class="mce-EMAIL" placeholder="email address" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_caeb93e7ec4f819cde8fb98cf_968b19ee69" tabindex="-1" value=""></div>
+        <input type="submit" value="Subscribe" name="subscribe" class="mc-embedded-subscribe">
+        {{!-- </div> --}}
+    </form>
+  </div>
+</footer>

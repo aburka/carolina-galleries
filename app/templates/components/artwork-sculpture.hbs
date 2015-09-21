@@ -1,0 +1,7 @@
+<section class="artwork">
+  <ul class="artwork-list">
+    {{#each model._embedded.artworks as |artwork|}}
+      {{artwork-painting-item artwork=artwork like='like' unlike='unlike'}}
+    {{/each}}
+  </ul>
+</section>

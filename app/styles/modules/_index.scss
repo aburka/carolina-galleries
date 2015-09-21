@@ -1,0 +1,90 @@
+// hero image, text and button
+img{
+  max-width: 100%;
+}
+
+.landing-hero{
+  // position: static;
+  top: -95px;
+}
+
+.landing-headline{
+  position: relative;
+  text-align: center;
+  top: -240px;
+  display: block;
+  font-size: 24px;
+  color: $dark-gray;
+}
+
+.landing-explore{
+  position: relative;
+  left: 46%;
+  top: -220px;
+  width: 85px;
+
+  padding: 10px;
+
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 3px;
+  text-align: center;
+}
+
+.landing-explore:hover{
+  background-color: rgba(255,255,255,0.7);
+  transition: 0.3s;
+}
+
+.landing-explore>p{
+  font-size: 18px;
+  color: $dark-gray;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+//static cards on index page
+
+.explore{
+  max-width: 1000px;
+  margin: -15px auto 0 auto;
+}
+
+.explore-list{
+  margin: 0;
+}
+
+.explore-list-item{
+  display: inline-block;
+  width: 300px;
+  margin-right: 45px;
+  vertical-align: top;
+}
+
+.explore-list-item:last-child{
+  margin-right: 0;
+}
+
+.explore-thumbnail{
+}
+
+.explore-caption{
+  display: inline-block;
+  width: 280px;
+  height: 150px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.explore-title{
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.explore-copy{
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}

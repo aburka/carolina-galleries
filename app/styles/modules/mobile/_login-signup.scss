@@ -1,0 +1,72 @@
+@media(min-width : 320px) and (max-width : 480px){
+  .user-login-create{
+    float: none;
+  }
+
+  .session,
+  .new-user{
+    display: inline-block;
+    position: relative;
+    float: none;
+    max-width: 300px;
+    height: 400px;
+    margin-top: 25px;
+    left: 3%;
+  }
+
+  form.login-form>input{
+    max-width: 300px;
+  }
+
+  p.login,
+  p.signup{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  p.login:active,
+  p.signup:active{
+    color: $red;
+  }
+
+  h1{
+    font-size: 24px;
+    font-weight: 500;
+    color: $red;
+  }
+}
+
+@media(min-width : 481px) and (max-width : 1000px){
+
+  .user-login-create{
+    float: none;
+  }
+  
+  .session,
+  .new-user{
+    float: none;
+    position: relative;
+    max-width: 500px;
+    left: 5%;
+
+  }
+
+  form.login-form>input{
+    max-width: 500px;
+  }
+
+  p.login,
+  p.signup{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  h1{
+    font-size: 24px;
+    font-weight: 500;
+    color: $red;
+    line-height: 28px;
+  }
+}

@@ -6,6 +6,24 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('sessions', function() {
+    this.route('create');
+  });
+  this.route('artists');
+  this.route('artwork', function() {
+    this.route('show', {path: 'art/:id'});
+    this.route('sculpture');
+    this.route('painting');
+  });
+  this.route('contact');
+
+  this.route('users', function() {
+    this.route('current', {path: 'me'});
+    this.route('create');
+  });
+  this.route('gallery', function() {
+    this.route('show', {path:':id'});
+  });
 });
 
 export default Router;

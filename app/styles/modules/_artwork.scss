@@ -1,0 +1,165 @@
+//page container
+.artwork{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+//div conatining list items
+.artwork-list{
+  // max-width: 1000px;
+  margin: 25px 0 0 0;
+}
+
+//"li"
+.artwork-list-item{
+  display: inline-block;
+  width: 300px;
+  // height: 300px;
+  margin: 14px 14px 0 7px;
+  background-color: $light-gray;
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 5px;
+  text-align: center;
+
+}
+.artwork-list-item{
+
+  // padding: 10px;
+}
+//
+.artwork-list-item::first-line{
+  vertical-align: top;
+}
+
+//image
+.artwork-list-item>img{
+  max-width: 100%;
+  text-align: center;
+  top-left-border-radius: 5px;
+  top-right-border-radius: 5px;
+
+}
+
+//title of artwork
+.artwork-title{
+  display: block;
+  padding: 20px;
+
+}
+
+.artwork-title>p{
+  font-size: 16px;
+  line-height: 20px;
+}
+
+//font awesome heart
+i.fa>.fa-heart:focus{
+  outline:0;
+}
+
+.liked{
+  color: $red;
+}
+
+.liked:focus{
+  outline:0;
+}
+
+button.like-button:focus,
+button.unlike-button:focus{
+  outline: 0;
+}
+
+.not-liked{
+  color: $light-gray;
+}
+
+.not-liked:hover{
+  color: $red;
+  transition: 0.4s;
+}
+
+
+//Individual artwork on a page
+
+.artwork-show{
+  max-width: 1000px;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.artwork-show>img{
+  max-width: 100%;
+  border: 5px solid white;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.artwork-show-title{
+  margin: 0 auto;
+  display: block;
+  width: 500px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+
+}
+
+.artwork-show-date{
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+// current user gallery
+
+.gallery{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+form.user-gallery-upload{
+  margin-top: -13px;
+  height: 70px;
+}
+
+form.user-gallery-upload > input{
+  margin-top: -13px;
+  height: 30px;
+  width: 150px;
+}
+
+h1.current-user-links{
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 30px;
+  color: $dark-gray;
+}
+
+.gallery-edit{
+  display: block;
+  width: 300px;
+}
+
+.gallery-edit-button{
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px;
+}
+
+p.gallery{
+  padding: 10px;
+}
+
+p.gallery-title{
+  padding: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.add-gallery,
+.chat{
+  display: block;
+  padding: 29px 0 11px 0;
+}

@@ -1,0 +1,54 @@
+footer{
+  clear: both;
+  display: block;
+  max-width: 100%;
+  height: 75px;
+  margin-top: 40px;
+  background-color: $dark-gray;
+}
+
+.footer-copyright{
+  display: inline-block;
+  width: 300px;
+  margin: 30px 0 0 75px;
+}
+
+.footer-copyright>p{
+  color: white;
+}
+
+.mc-email-signup{
+  display: inline-block;
+  width: 540px;
+  float: right;
+  margin: 10px 0 0 15px;
+}
+
+.validate>p{
+  color: white;
+}
+
+input.mce-EMAIL{
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  margin: 0 0 10px 0;
+  background-color: $dark-gray;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+input.mc-embedded-subscribe{
+  width: 75px;
+  height: 30px;
+  background-color: $dark-gray;
+  color: white;
+  border: none;
+  padding: 0;
+}
+
+input.mc-embedded-subscribe:hover{
+  color: $medium-gray;
+  cursor: pointer;
+}

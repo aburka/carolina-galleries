@@ -1,0 +1,66 @@
+.gallery-contact{
+  max-width: 1000px;
+  margin: 25px auto;
+}
+
+.gallery-address{
+  display: inline-block;
+  width: 350px;
+  float: right;
+  // padding-top: 125px;
+}
+
+.gallery-address>h3,
+.gallery-hours>h3,
+.gallery-contact-form-container>h3{
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.gallery-contact-form-container>h3:hover{
+  cursor: pointer;
+}
+
+.gallery-address>p{
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.gallery-hours,
+.gallery-contact-form-container{
+  padding-top: 20px;
+}
+
+.gallery-contact-form-container{
+
+}
+
+.gallery-contact-form{
+ width: 250px;
+ background-color: $light-gray;
+ border: 1px solid rgba(255,255,255,0.7);
+ border-radius: 5px;
+ padding: 10px;
+ text-align: center;
+}
+
+.gallery-contact-form>input{
+  width: 225px;
+}
+
+p.submit-contact{
+  display: inline-block;
+  margin: 25px 25px 0 0;
+}
+p.submit-contact:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.map{
+  display: inline-block;
+  width: 600px;
+}

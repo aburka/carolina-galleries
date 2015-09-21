@@ -1,0 +1,8 @@
+<form class="login-form new-user">
+  <h1>New to Carolina Galleries? <br /> Sign up here.</h1>
+  {{input placeholder="First Name" value=model.firstName}}
+  {{input placeholder="Last Name" value=model.lastName}}
+  {{input placeholder="E-mail" type="email" value=model.username}}
+  {{input placeholder="Password" type="password" value=model.password}}
+  <p class="signup" {{action 'createUser'}}>Sign Up</p>
+</form>

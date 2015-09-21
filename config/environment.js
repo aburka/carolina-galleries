@@ -14,8 +14,26 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      applicationId: 'PaFAu2kO46oTycsnl24y1PW4eplJYhqLclUewK0X',
+      restApiId: 'n1NfFjm1FopNhvNrxEqGk3JZwOwnv3nCCViOSZXC'
+    },
+
+    contentSecurityPolicy: {
+      'default-src': "'self' www.google.com dialog.filepicker.io www.filepicker.io",
+      'script-src': "'self' api.artsy.net firebaseio.com",
+      'font-src': "'self' *",
+      'connect-src': "'self' *",
+      'img-src': "'self' *",
+      'style-src': "'self' *",
+      'media-src': "'self'",
+    },
+
+    'simple-auth': {
+      authenticationRoute: 'application',
+      routeAfterAuthentication: 'index',
+      routeIfAlreadyAuthenticated: 'index',
+      authorizer: 'authorizer:parse',
+      crossOriginWhitelist: ['https://api.parse.com']
     }
   };
 
@@ -40,7 +58,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/carolina-galleries/';
   }
 
   return ENV;

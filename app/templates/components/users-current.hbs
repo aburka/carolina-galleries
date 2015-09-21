@@ -1,0 +1,13 @@
+<h1 class="current-user-links">Your Liked Images</h1>
+<ul class="artwork-list">
+  {{log model}}
+{{#each model as |artwork|}}
+  <li class="artwork-list-item">
+    <button class="like-button" {{action 'unlike' artwork}}><i class="fa fa-heart liked"></i></button>
+    {{#link-to 'artwork.show' artwork}}
+    <img class="user-gallery-thumbnail" src="{{artwork._links.thumbnail.href}}"/>
+    <p class="artwork-title">{{artwork.title}}</p>
+    {{/link-to}}
+  </li>
+{{/each}}
+</ul>

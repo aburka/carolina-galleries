@@ -1,0 +1,9 @@
+{{#if enabled}}
+  <div class="modal-fog">
+    <div class="modal-frame">
+      <p class='close' {{action 'closeModal'}}><i class="fa fa-times"></i></p>
+      {{users-create model=model createUser=createUser}}
+      {{sessions-create}}
+    </div>
+  </div>
+{{/if}}

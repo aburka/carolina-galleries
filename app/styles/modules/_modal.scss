@@ -1,0 +1,56 @@
+
+.modal-fog {
+  background: rgba(30, 30, 30, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.modal-frame {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  border: 1px solid rgba(61,61,61,0.2);
+  border-radius: 5px;
+  background: white;
+  height: 400px;
+  width: 600px;
+  z-index: 3;
+}
+
+.session{
+  display: inline-block;
+  position: absolute;
+  left: 7%;
+  width: 300px;
+  height: 400px;
+  margin-top: 25px;
+}
+
+.new-user{
+  display: inline-block;
+  position: absolute;
+  right: -7%;
+  width: 300px;
+  height: 400px;
+  margin-top: 25px;
+}
+
+p.close{
+  float: right;
+  margin: 8px 8px 0 0;
+}
+
+.session .login,
+.new-user .signup{
+  display: inline-block;
+  width: 200px;
+}
+
+h1{
+  font-size: 18px;
+  font-weight: 500;
+  color: $red;
+}

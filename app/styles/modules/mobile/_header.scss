@@ -1,0 +1,108 @@
+@media (min-width : 320px) and (max-width : 1000px) {
+  .main-heading-desktop{
+    display: none;
+  }
+
+  .main-heading-mobile{
+    max-width: 100%;
+    display: block;
+    background-color: $dark-gray;
+  }
+
+  .main-logo{
+    display: none;
+  }
+
+  .site-navigation{
+    margin-left: 15px;
+    width: 300px;
+  }
+
+  .dropDownList {
+  	display: none;
+    position: absolute;
+    z-index: 2;
+    width: 236px;
+    height: 450px;
+  	left: 9px;
+    top: 65px;
+    background-color: $dark-gray;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .menu-item:focus + .dropDownList,
+  .dropDownList:focus{
+    display: inline-block;
+  }
+
+  .sub-menu {
+    clear: both;
+  	width: 200px;
+    padding: 18px;
+    background-color: $dark-gray;
+    color: white;
+    font-size: 18px;
+  }
+
+  .sub-menu>a{
+    color: white;
+    font-size: 18px;
+  }
+
+  .fa-bars{
+    color: white;
+  }
+
+  i.fa-bars{
+    font-size: 26px;
+  }
+
+  .fa-bars:active{
+    color: $red;
+  }
+}
+
+// @media (min-width : 480px)
+// and (max-width : 1000px) {
+//
+//   .main-logo{
+//     float: left;
+//     margin-left: 25px;
+//     margin-top: 12px;
+//     width: 40px;
+//     height: 40px;
+//   }
+//
+//   .site-navigation{
+//     margin-left: 5px;
+//     width: 313px;
+//   }
+//
+//   .dropDownList {
+//   	//display: none;
+//     width: 136px;
+//     height: 100px;
+//     position: absolute;
+//     z-index: 2;
+//   	left: 78px;
+//     top: 50px;
+//     background-color: white;
+//     -webkit-clip-path: polygon(0% 15%, 10% 15%, 20% 0%, 30% 15%, 100% 15%, 100% 100%, 0% 100%);
+//     clip-path: polygon(0% 15%, 10% 15%, 20% 0%, 30% 15%, 100% 15%, 100% 100%, 0% 100%);
+//     box-shadow: 1px 1px 1px rgba(61,61,61,0.2);
+//     border-radius: 2px;
+//   }
+//
+//   .user-login-create-container{
+//     display: inline-block;
+//     width: 300px;
+//     float: right;
+//     margin-right: 15px;
+//   }
+//
+//   .user-login-create{
+//     color: white;
+//     float: right;
+//     margin-right: 15px;
+//   }
+// }
